@@ -83,6 +83,30 @@ h3
 	width: 100%;
 	background-color: #CCC;
 }
+#content-left-top
+{
+	margin-top: 5px;
+	border-radius: 10px;
+	height:300px;
+	width: 160px;
+	background-color: yellow;
+}
+#content-left-top
+{
+	border: 2px solid;
+}
+#content-left-top ul li a
+{
+	text-decoration: none;
+}
+#content-left-top ul li{
+	padding: 20px;
+	padding-bottom: 5px;
+	border-bottom:1px solid; 
+	list-style: none;
+	margin:0px;
+
+}
 #footer
 {
 	height: 100px;
