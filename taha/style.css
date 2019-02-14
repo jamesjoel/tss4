@@ -8,12 +8,15 @@
 	width: 100%;
 	height: 100px;
  }
+ .row h1{
+ 	padding-top: 28px;
+ }
 .menu ul{
 margin:0;
 padding: 0px;
 } 
 .menu ul li {
-padding: 10px 50px 10px 10px;
+padding: 10px 30px 10px 10px;
 	margin: 0;
 	float: left;
  	list-style: none;
@@ -22,26 +25,3 @@ padding: 10px 50px 10px 10px;
 	
  	text-decoration: none;
 }
-/*#footer{
-	/*background-image: linear-gradient(to left,#946466,#de8989,#d49999);*/
-	/*margin:0;*/
-	/*padding: 0;*/
-	/*height: 250px;*/
-	/*width: 100%;*/
-	/*background-color: #808B96;*/
-/*}*/
-/*#content{*/
-	/*background-image: radial-gradient(#946466,#de8989);*/
-	/*min-height: 600px;*/
-	/*height: auto;*/
-	/*width: 100%;*/
-/*}*/
-/*.rosw col-md-4 h1{*/
-	/*padding: 5px;*/
-/*}*/
-/*.row col-sm-2 h1{*/
-	/*padding: 5px;*/
-/*}*/
-/*.row col-8 h1{*/
-	/*padding: 5px;*/
-/*}*/
