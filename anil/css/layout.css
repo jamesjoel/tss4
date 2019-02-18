@@ -2,6 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
+	background-image: radial-gradient(#ECB295,#fff,#ECB295);
 }
 #header
 {
@@ -15,11 +16,12 @@ body
 {
 	float: left;
 	height: 150px;
-	width: 200px;
+	width: 230px;
 	/*background-color: #ADE432;*/
 }
 h1
 {	font-style: serif;
+	mix-blend-mode: screen;
 	font-size: 40px;
 	padding: 30px 5px 5px 30px;
 }
@@ -38,18 +40,19 @@ span
 }
 h3
 {
+	font-weight:Ghost-text;
 	padding-right: 5px;
 }
 .inner
 {
 	min-height: 150px;
 	height: auto;
-	width: 900px;
+	width: 920px;
 	margin: 0 auto;
 	/*background-color: #ABC846;*/
 }
 #menu
-{	height: 50px;
+{	height: 44px;
 	margin: 0;
 	background-color: #66350D;
 	float:bottom;
@@ -63,7 +66,7 @@ h3
 	color: #fff;
 	/*list-style: none;*/
 }
-#menu ul li:hover
+#menu ul li :hover
 {
 	background-color: #070804;
 }
@@ -81,23 +84,39 @@ h3
 	min-height:600px;
 	height: auto;
 	width: 100%;
-	background-color: #CCC;
+	/*background-color: #CCC;*/
+}
+#content-left
+{
+	width: 150px;
+	float: left;
+}
+#content-right
+{
+	float: right;
 }
 #content-left-top
 {
+
 	margin-top: 5px;
 	border-radius: 10px;
-	height:300px;
+	height:270px;
 	width: 160px;
-	background-color: yellow;
-}
-#content-left-top
-{
+	background-color:#DEA07F;
 	border: 2px solid;
+}
+#content-left-top ul :hover
+{
+	box-shadow:2px 4px 2px #0E110A;
+}
+#content-left-bottom ul :hover
+{
+	box-shadow:2px 4px 2px #0E110A;
 }
 #content-left-top ul li a
 {
 	text-decoration: none;
+	color: #742501;
 }
 #content-left-top ul li{
 	padding: 20px;
@@ -105,7 +124,67 @@ h3
 	border-bottom:1px solid; 
 	list-style: none;
 	margin:0px;
+}
+#content-left-top ul li :hover
+{
+	/*background-color: #BB734A;*/
+}
+#content-left-bottom
+{
+	margin-top: 5px;
+	border-radius: 10px;
+	height:300px;
+	width: 160px;
+	background-color:#DEA07F;
+}
+#content-left-bottom
+{
+	border: 2px solid;
+}
+#content-left-bottom ul li a
+{
+	text-decoration: none;
+	color: #742501;
+}
+#content-left-bottom ul li{
+	padding: 20px;
+	padding-bottom: 5px;
+	border-bottom:1px solid; 
+	list-style: none;
+	margin:0px;
 
+}
+#content-left-bottom ul li :hover{
+	background-color: #BB734A;
+}
+#content-right
+{
+	float: right;
+	height: 600px;
+	width: 750px;
+}
+#content-right-top img
+{
+	/*width: 720px;*/
+}
+#con
+{
+	height: 600px;
+}
+#product
+{
+	float: left;
+
+	height: 380px;
+	width: 750px;
+	/*background-color: #BB734A;*/
+}
+.pr
+{
+	height: 170px;
+	width: 130px;
+	background-color: #BB734A;
+	margin: 3px;
 }
 #footer
 {
