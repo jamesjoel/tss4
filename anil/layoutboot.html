@@ -1,33 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SafA</title>
+	<title>ApaH</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/layoutboot.css">
+	<script type="text/javascript" href="js/jquery.js"></script>
 	<script type="text/javascript" href="js/bootstrap.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="acss/layoutboot.css">
+	<style>
+		background-image:url(bg.jpg");
+	</style>
 	</head>
 <body>
-<div class="container">
-	<div>
-		<div class="row">
-			<div class="col-md-4">
-				<h1 class="display-4">SafA<h6>the only one</h6></h1>
-		</div>
-		<div class="offset-md-4 col-md-4"><button class="btn btn-success">Cart</button></div>
-</div>
-</div>
-<div class="container-fluid">
-<div class="container">
+	<div id="bodyjum" class="jumbotron">
 
-	<ul class="nav">
-			<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+<div  class="container">
+	<div>
+		<div id="jum1" class="row jumbotron jumbotron-fluid">
+			<div class="col-md-4">
+				<b><h1 class="display-4 font-weight-bolder">ApaH</b><h6>the only one</h6></h1>
+		</div>
+		<div class="offset-md-4 col-md-4"><h3><a href="#">Cart</a><small><span class="badge badge-danger badge-pill">6</span></small></h3><button class="btn btn-dark">
+		+SignUp</button><button class="btn btn-dark">login</button></div>
+</div>
+</div>
+</div>
+<!-- <div class="container-fluid"> -->
+<!-- <div class="container"> -->
+<nav class="navbar navbar-expand-sm navbar-dark">
+	<a href="#" class="navbar-brand"><button class="btn btn-outline-danger"><b>ApaH</b></button></a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#mymenu">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div id="mymenu" class="collapse navbar-collapse">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">HOME</a>
+			</li>
 			<li class="nav-item"><a class="nav-link" href="#">FASHION</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">MEN</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">WOMEN</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">HELP</a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">HELP</a>
+				<div class="dropdown-menu bg-dark">
+					<a href="#" class="dropdown-item" >Go to our website</a>
+					<a href="#" class="dropdown-item" >Contact us</a>
+				</div>
+
+			</li>
 			
 		</ul>
+	</div>
+</nav>
+	<!-- </div> -->
+<!-- </div> -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 background-color-success">
+		<table class="table">
+			
+				<tr><td><a href="#">Categories</a></td></tr>
+				<tr><td><a href="#">Women fashion</a></td></tr>
+				<tr><td><a href="#">Men fashion</td></tr>
+				<tr><td><a href="#">Home Appliance</a></td></tr>
+				<tr><td><a href="#">Electronics</a></td></tr>
+				<tr><td>
+					<a href="#" class="dropdown dropdown-toggle
+					" data-dropdown="data-items">other</a></td>
+				</tr>
+	
+		</table>
+		</div>
+	<div id="jum2" class="col-md-10 jumbotron"></div>
+</div>
+		<!-- <div class="col-md-10 jumbotron" img src="image/5.jpg"></div> -->
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-heading bg-dark text-light text-center"><strong>Sony</strong></div>
+					<img src="image/30.jpg" height="250px" width="150px" class="card-img-top">
+					<div class="card-footer bg-dark text-light text-center"> $ 142 </div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-heading bg-dark text-light text-center"><strong>Sumsung</strong></div>
+					<img src="image/29.jpg" height="250px" width="150px" class="card-img-top">
+					<div class="card-footer bg-dark text-light text-center"> $ 92 </div>
+				</div>
+			</div>
+		<div class="col-md-3">
+				<div class="card">
+					<div class="card-heading bg-dark text-light text-center"><strong>Apple laptop</strong></div>
+					<img src="image/28.jpg" height="250px" width="150px" class="card-img-top">
+					<div class="card-footer bg-dark text-light text-center"> $ 1203</div>
+				</div>
+			</div>
+		<div class="col-md-3">
+				<div class="card">
+					<div class="card-heading bg-dark text-light text-center"><strong>Hp laptop</strong></div>
+					<img src="image/27.jpg" height="250px" width="150px" class="card-img-top">
+					<div class="card-footer bg-dark text-light text-center"> $ 362 </div>
+				</div>
+			</div>
+		
+		</div>
 	</div>
 </div>
 </body>

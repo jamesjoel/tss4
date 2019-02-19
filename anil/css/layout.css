@@ -19,6 +19,18 @@ body
 	width: 230px;
 	/*background-color: #ADE432;*/
 }
+.bu
+{	color: #fff;
+	background-color: #66350D;
+	height: 30px;
+	width: 60px;
+	border-radius: 5px;
+}
+.bu :hover
+{
+	background-color: #fff;
+	box-shadow: 5px 5px 4px #0E110A;
+}
 h1
 {	font-style: serif;
 	mix-blend-mode: screen;
