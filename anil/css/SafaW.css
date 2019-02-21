@@ -1,0 +1,39 @@
+body{
+	background-image: url("../image/64.jpg");
+	/*background-repeat: no-repeat;*/
+  	background-size : auto;
+}
+/*#conf-1 :hover
+{
+	transition: 2s;
+	background-image: url("../image/64.jpg");
+}*/
+.navbar
+{
+	background-color: #1B234F;
+}
+}
+.container-fluid
+{
+	background-image: url("../image/64.jpg");
+}
+#sp-1{
+	/*padding-left : 4px;*/
+	font-size: 12px;
+	/*margin-top: 0px;*/
+}
+.navbar-brand{
+	/*text-decoration:radial-gradient (#fff,#000);*/
+	/*text-decoration:none;*/
+	color: #fff;
+	background-color: #FAD400;
+}
+.nav-link
+{
+	color: #fff;
+}
+
+#mybut :hover
+{
+	color: #FCFA04;
+}
