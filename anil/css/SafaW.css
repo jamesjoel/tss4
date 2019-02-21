@@ -3,14 +3,19 @@ body{
 	/*background-repeat: no-repeat;*/
   	background-size : auto;
 }
+/*#conf-1 :hover
+{
+	transition: 2s;
+	background-image: url("../image/64.jpg");
+}*/
 .navbar
 {
 	background-color: #1B234F;
 }
 }
-.container
+.container-fluid
 {
-	background-image: url("../image/65.jpg");
+	background-image: url("../image/64.jpg");
 }
 #sp-1{
 	/*padding-left : 4px;*/
