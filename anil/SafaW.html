@@ -1,14 +1,50 @@
 <html>
 <head>
 	<title>SafaW</title>
-	<link rel="stylesheet" type="text/css" href="css/SafaW.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/SafaW.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<script type="text/javascript" href="js/bootstrap.bundle.js"></script>
-	<script type="text/javascript" href="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- <meta name="viewport" content="width-device-width, intial-scale=1"> -->
+	<style>
+		.sidenav{
+			height: 100%;
+			width: 0px;
+			position: fixed;
+			z-index: 1;
+			top:40px;
+			left: 0px;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 1 s;
+			padding-top:50px;
+		}
+		.sidenav a{
+			padding: 9px 9px 9px 32px;
+			text-decoration: none;
+			font-size: 20px;
+			color: #fff;
+			display: block;
+			transition: .5 s;
+		}
+		.sidenav a:hover{
+			color: #ABC000;
+		}
+		.sidenav .closebtn{
+			position: absolute;
+			top:40px;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		@media scrren and (max-height:  450px) {
+			.sidenav {padding-top: 15px;}
+			.sidenav a {font-size: 18px;}
+		}
+	</style>
 </head>
 <body>
-<div id="conf-1" class="container-fluid	no-repeat">
-				<nav class="navbar navbar-expand-sm">
+<nav class="navbar navbar-expand-sm bg-dark">
 					<a href="SafaW.html" class="navbar-brand text-centre"><h1 class="text-center"><b>SafaW</b></h1><span><small id="sp-1">Student and faculty active Window</small></span></a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#mybut">
 						<span class="navbar-toggler-icon"></span>
@@ -47,14 +83,29 @@
 					</div>
 						
 					</div>
-				</nav>
-	<div class="container-fluid"> 
-		<div class="jumbotron">
+</nav>
+		<div id="mySidenav" class="sidenav">
+				<span style="font-size: 20px; cursor:pointer" onclick="openNav()">&#9776; More	</span>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times close</a>
+			<h6 class="header">Official Websites</h6>
 			
+			<a href="https://www.rgpv.ac.in/Index.aspx">RGPV University</a>
+			<a href="https://www.ipsacademy.org/">IES Ips Academy</a>
+
 		</div>
+				<script>
+			function openNav()
+			{
+				document.getElementById("mySidenav").style.width="230px";
+			}
+			function closeNav()
+			{
+				document.getElementById("mySidenav").style.width="0px";
+			}
+		</script>
+	
+	<div class="container-fluid"> 
+		
 	</div>
-			
-		</div>	
-</div>
 </body>
 </html>
