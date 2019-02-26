@@ -1,9 +1,5 @@
-body{
-	margin: 0;
-	padding: 0;
-}
 #fixed{
-	background-image: url(image/nvidia_19.jpg);
+	background-image: url(image/15.jpg);
 	position: fixed;
 	display: block;
 	top: 0;
@@ -16,8 +12,4 @@ body{
 	transform:translateZ(0);
 	background-position: center center; 
 	Will change:transform;
-}
-.dropdown, 
-.modal{
-	opacity:  .7;
 }
