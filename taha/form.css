@@ -1,0 +1,15 @@
+#fixed{
+	background-image: url(image/15.jpg);
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
+	background-position: center center; 
+	Will change:transform;
+}

@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>BRAVO</title>
-	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
@@ -18,37 +18,86 @@
 
 
 <!-- End WOWSlider.com HEAD section -->
+<style type="text/css">
+	
+.jumbotron:hover{
+	filter: blur(3px);
+}
+</style>
 </head>
 
 <body>
-	
+
+	<!-- MY modal -->
+
+
+	<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1>Login</h1>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" class="form-control" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" placeholder="Password">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button data-dismiss="modal" class="btn btn-danger">Close <i class="fa fa-window-close" aria-hidden="true"></i></button>
+				<button data-dismiss="modal" class="btn btn-success">Login <i class="fa fa-user"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- static background class -->
+
+
+	<div id="fixed">
 		
-	<div class="container-fluid" style="background-color: #000">
+		
+	<!-- <div class="container-fluid" style="background-color: #000">
 			<p class="text-light float-left"></p>
 			<ul class="nav nav-pills justify-content-end">
+				<button class="btn btn-outline-light" data-toggle="modal" data-target="#myModal">Login</button>
+
+
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="login.html">Signup <i class="fa fa-user" aria-hidden="true"></i></a>
+					<a class="nav-link text-light" href="form.html ">Signup <i class="fa fa-user" aria-hidden="true"></i></a>
 				</li>
 			</ul>
-	</div>
+	</div> -->
 
 
 	<!-- header -->
 
 
-	<nav class="sticky-top navbar bg-dark navbar-expand-sm navbar-dark">
+	<nav class="sticky-top navbar bg-dark navbar-expand-sm navbar-expand-lg navbar-dark navbar-fixed-side">
 		<a href="#" class="navbar-brand ">
-			<button class="btn btn-lg btn-outline-light">BRAVO </button>
-			<span class="badge badge-light badge-pill">you are the choosen one</span>
+			<!-- <button class="btn btn-lg btn-outline-light">BRAVO </button>
+			<span class="badge badge-light badge-pill">you are the choosen one</span> -->
 		</a>	
-		<button class="navbar-toggler" data-type="collapse" data-target="#myMenu">
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 	<div id="myMenu" class="collapse navbar-collapse">
 		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+					<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Categories</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="slider.html">Premium Graphic Card</a>
+						<a class="dropdown-item" href="#">Live PC Setup</a>
+						<a class="dropdown-item" href="#">User Info</a>
+						<a class="dropdown-item" href="#">Other Products</a>
+						<a class="dropdown-item" href="#">Our Suppliers</a>
+						<a class="dropdown-item" href="#">About Us</a>
+					</div>
+				</li>
 			<li class="nav-item active">
 				<a href="#" class="nav-link">Home <i class="fa fa-home" aria-hidden="true"></i></a>
 			</li>
@@ -59,18 +108,21 @@
 				<a href="#" class="nav-link">Live Streamers <i class="fa fa-gamepad"></i></i></a>
 			</li>
 			<li>
-				<a href="#" class="nav-link">New releases</a>
+				<a href="login.html" class="nav-link">New releases</a>
 			</li>
 			<li>
-				<a href="#" class="nav-link">Premium</a>
+				<a href="#" class="nav-link">Game Zone <i class="fa fa-gamepad"></i></i></a>
 			</li>
+<<<<<<< HEAD
 			<li class="nav-item dropdown">
 					<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">More</a>
-					<div class="dropdown-menu">
+					<!-- <div class="dropdown-menu">
 						<a class="dropdown-item" href="#">User</a>
 						<a class="dropdown-item" href="#">Login</a>
-					</div>
+					</div> -->
 				</li>
+=======
+>>>>>>> df033f3b20ab7b199a4c52da81e90c7c95f9112b
 		</ul>
 	</div>
 	</nav>
@@ -105,9 +157,11 @@
 <!-- End WOWSlider.com BODY section -->
 	<!-- <div id="fixed">
 	</div> -->
-
-<div class="container">
-	<div class="row"></div>
+	
+<div class="jumbotron jumbotron-container text-center">
+	<h1><i class="fa fa-gamepad"> HOLA TO GAMECON!!<i class="fa fa-gamepad"></i></i></h1>
 </div>
+
+	</div>	
 </body>
 </html>

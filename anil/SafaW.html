@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<!-- <meta name="viewport" content="width-device-width, intial-scale=1"> -->
 </head>
 <body>
-<nav class="navbar navbar-info navbar-expand-sm bg-dark">
-					<a href="SafaW.html" class="navbar-brand text-centre"><h1 class="text-center"><b>SafaW</b></h1><span><small id="sp-1">Student and faculty active Window</small></span></a>
+	
+<nav class="sticky-top navbar navbar-info navbar-expand-sm navbar-expand-md bg-dark ">
+					<a href="SafaW.html" class="navbar-brand text-centre"><h1 class="text-center"><b>SafaW</b></h1><span class="badge badge-light badge-pill"><small id="sp-1">Student and faculty active Window</small></span></a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#mybut">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -45,31 +47,35 @@
 							
 						</ul>
 					</div>
+<div>
+<a href="#" class="btn btn-outline-light"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</a>
+<a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+</div>
+</nav>		
+			<div id="myModal" class="modal fade">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="form-group">
+							<button class="btn bg-dark float-right"><span <i class="fa fa-times-circle" aria-hidden="true"></i>></span></button>
+						</div>
+						<div class="modal-header">
+							<h1>Welcome</h1>
+						</div>	
+							<div class="modal-body">
+								<div class="form-group">
+									<label>Unique Code</label>
+									<input type="text" class="form-control"placeholder="Computer Code">
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<input type="text" class="form-control" placeholder="DOB yyyy-mm-dd">
+								</div>
+							</div>	
 						
 					</div>
-</nav>
-		
-			<h6 class="header">Quick Visit</h6>
-			<a href="#">Home Work</a>			
-			<a href="https://www.rgpv.ac.in/Index.aspx">RGPV University</a>
-			<a href="https://www.ipsacademy.org/">IES Ips Academy</a>
+					
+				</div>
+			</div>	
 
-	<div class="tabs expanded" id="follow" style="display:block; overflow:hidden; width:480px;">
-		<ul class="tab-nav row">
-			<li class>
-				<a href="#">News</a>
-			</li>
-			<li class="on">
-				<a href="#">H.W.</a>
-			</li>
-			<li class>
-				<a href="#">Events</a>
-			</li>after
-			::
-		</ul>
-		<div class="tabs-content">
-			
-		</div>
-	</div>
 </body>
 </html>
