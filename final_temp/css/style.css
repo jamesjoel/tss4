@@ -112,3 +112,17 @@ html {
 	color: #FFF;
 	text-decoration: none;
 }
+.footer{
+	height: 200px;
+}
+.footer .nav .nav-link{
+	color: #a5a5a5;
+}
+.header_area {
+     position: sticky; 
+     width: 100%; 
+     top: 35px; 
+     left: 0; 
+     z-index: 99; 
+     transition: background 0.4s, all 0.3s linear; 
+}

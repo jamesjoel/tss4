@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<h1>Home Page</h1>
+
+<h2><%= first+second %></h2>
+<h2><%= second %></h2>
+
+<table class="table table-dark table-hover table-bordered">
+	<tr>
+		<td>S.No.</td>
+		<td>Name</td>
+		<td>Age</td>
+		<td>City</td>
+	</tr>
+
+
+
+
+<% color.forEach(function(x, i){ %>
+	<tr>
+	<td><%= i+1 %></td>
+	<td><%= x.name %></td>
+	<td><%= x.age %></td>
+	<td><%= x.city %></td>
+	</tr>
+
+<% }) %>
+
+
+
+</body>
+</html>
