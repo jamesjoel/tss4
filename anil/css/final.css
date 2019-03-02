@@ -1,4 +1,34 @@
-.row
+#navbar-1
 {
-	border:1px solid #000;
+	background-color:#000000 !important ;
+	color: #fff !important;	
 }
+#navbar-1 ul li :hover
+{
+	background-color: #fff !important;
+	color: #000;
+	transition: 0.7s;
+}
+.nav-link a{ 
+	color: #fff;
+ }
+#sp-1
+{
+	font-size: 12px;
+}
+#sp-2{
+	background-color: #fff;
+}
+#jum-1{
+	min-height: 500px;
+	/*background-color: red;*/
+	/*background-image: url("../image/36.jpg");*/
+	background-image: url("../image/98.jpg");
+}
+nav{
+	position: fixed;
+}
+.data-toggler-icon{
+	border-color: red;
+}
+
