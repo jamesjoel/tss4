@@ -44,12 +44,38 @@
 	/*background-image: url("../image/36.jpg");*/
 	background-image: url("../image/98-1.jpeg");
 }
-.jum2{
-	height: 220px;
-	width: 220px;
-	background-image: url("../image/11-1.jpg");
-}
+#cd{
+	height: 260px;
+	background-image: url(../image/11-2.jpg);
+  }
+  #cd1{
+	background-image: url(../image/90-1.jpg);
 
+  }
+  #cd2{
+	background-image: url(../image/100-1.jpg);
+
+  }
+ .cd-1 a{
+	color: #fff;
+ 	text-decoration: none;
+ 	
+ }
+ .cd-1 a:hover{
+ 	text-decoration: none;
+ 	color: red;
+ }
+.pro-bt{
+	text-align: center;
+	visibility: hidden;
+	margin: 0 auto !important	;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pro-bt:hover{
+	visibility: visible;
+}
 #navbar-2{
 	background-color:#EBEBEB;
 	}
