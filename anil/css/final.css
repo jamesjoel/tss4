@@ -41,7 +41,22 @@
 	font-size: 30px;
 	color: #fff;
 }
-.jumbotron:hover{
+#cd:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd1:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd2:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-2:hover{
 	transition: 0.9s;
 	border-radius: 30px;
 	border: 2px solid #000;
@@ -61,11 +76,13 @@
 	height: 260px;
 	background-image: url(../image/11-2.jpg);
   }
-  #cd1{
+#cd1{
+	height: 260px;
 	background-image: url(../image/90-1.jpg);
 
   }
-  #cd2{
+#cd2{
+	height: 260px;
 	background-image: url(../image/100-1.jpg);
 
   }
