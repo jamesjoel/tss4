@@ -17,7 +17,10 @@ index.listen(3000,function(){
 
  index.get("/",function(req,res){
  	console.log("This is home page");
- 	res.sendFile(__dirname + "/index.js");
+ 	res.sendFile(__dirname + "/home.html");
  });
 
- index.get("")
+ index.get("*",function(req,res){
+ 	cosole.log("Default page is running");
+ 	res.sendFile(__dirname + "/not.html");
+ });
