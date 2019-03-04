@@ -1,3 +1,6 @@
+#body{
+	background-color: ;
+}
 #h11{
 	color: #DA3738;
 }
@@ -38,11 +41,21 @@
 	font-size: 30px;
 	color: #fff;
 }
+.jumbotron:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
 #jum-1{
 	min-height: 650px;
 	/*background-color: red;*/
 	/*background-image: url("../image/36.jpg");*/
 	background-image: url("../image/98-1.jpeg");
+}
+#jum-2{
+	height:260px;
+	background-image: url("../image/102-1.jpg");
+	background-image: 100% 100% auto;
 }
 #cd{
 	height: 260px;
@@ -73,7 +86,7 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-.pro-bt:hover{
+.cd-1:hover .pro-bt{
 	visibility: visible;
 }
 #navbar-2{
