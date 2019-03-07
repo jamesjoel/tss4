@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+
+	<!-- Start WOWSlider.com HEAD section -->
+
+
+<link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+<script type="text/javascript" src="slider/engine1/jquery.js"></script>
+
+
+<!-- End WOWSlider.com HEAD section -->
+<style type="text/css">
+	
+.jumbotron:hover{
+	filter: blur(3px);
+}
+</style>
+</head>
+
+<body>
+
+	<!-- MY modal -->
+
+
+	<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1>Login</h1>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" class="form-control" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" placeholder="Password">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button data-dismiss="modal" class="btn btn-danger">Close <i class="fa fa-window-close" aria-hidden="true"></i></button>
+				<button data-dismiss="modal" class="btn btn-success">Login <i class="fa fa-user"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- static background class -->
+
+
+	<div id="fixed">
+		
+		
+	<div class="container-fluid" style="background-color: #000">
+			<p class="text-light float-left"></p>
+			<ul class="nav nav-pills justify-content-end">
+				<button class="btn btn-outline-light" data-toggle="modal" data-target="#myModal">Login</button>
+
+
+				<li class="nav-item">
+					<a class="nav-link text-light" href="form.html ">Signup <i class="fa fa-user" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+	</div>
+
+	<!-- header -->
+
+	<nav class="sticky-top navbar bg-dark navbar-expand-sm navbar-expand-lg navbar-dark navbar-fixed-side">
+		
+
+		<a href="#" class="navbar-brand ">
+			<button class="btn btn-lg btn-outline-light">BRAVO </button>
+			<span class="badge badge-light badge-pill">you are the choosen one</span>
+		</a>	
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	<div id="myMenu" class="collapse navbar-collapse">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item dropdown">
+					<a data-toggle="dropdown" href="#" class="nav-link dropdown-toggle">Categories</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="/premium Graphic card">Premium Graphic Card</a>
+						<a class="dropdown-item" href="#">Live PC Setup</a>
+						<a class="dropdown-item" href="#">User Info</a>
+						<a class="dropdown-item" href="#">Other Products</a>
+						<a class="dropdown-item" href="#">Our Suppliers</a>
+						<a class="dropdown-item" href="#">About Us</a>
+					</div>
+				</li>
+			<li class="nav-item active">
+				<a href="#" class="nav-link">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="#" class="nav-link">Special Offer</a>
+			</li>
+			<li>
+				<a href="#" class="nav-link">Live Streamers <i class="fa fa-gamepad"></i></i></a>
+			</li>
+			<li>
+				<a href="login.html" class="nav-link">New releases</a>
+			</li>
+			<li>
+				<a href="#" class="nav-link">Game Zone <i class="fa fa-gamepad"></i></i></a>
+			</li>
+
+		</ul>
+	</div>
+	</nav>
+	
+
+	<!-- Start WOWSlider.com BODY section -->
+
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="slider/data1/images/4.jpg" alt="4" title="4" id="wows1_0"/></li>
+		<li><img src="slider/data1/images/5.jpg" alt="5" title="5" id="wows1_1"/></li>
+		<li><img src="slider/data1/images/6.png" alt="6" title="6" id="wows1_2"/></li>
+		<li><img src="slider/data1/images/7.jpg" alt="7" title="7" id="wows1_3"/></li>
+		<li><a href="http://wowslider.net"><img src="slider/data1/images/9.jpg" alt="jquery carousel" title="9" id="wows1_4"/></a></li>
+		<li><img src="slider/data1/images/10.jpg" alt="10" title="10" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="4"><span><img src="slider/data1/tooltips/4.jpg" alt="4"/>1</span></a>
+		<a href="#" title="5"><span><img src="slider/data1/tooltips/5.jpg" alt="5"/>2</span></a>
+		<a href="#" title="6"><span><img src="slider/data1/tooltips/6.png" alt="6"/>3</span></a>
+		<a href="#" title="7"><span><img src="slider/data1/tooltips/7.jpg" alt="7"/>4</span></a>
+		<a href="#" title="9"><span><img src="slider/data1/tooltips/9.jpg" alt="9"/>5</span></a>
+		<a href="#" title="10"><span><img src="slider/data1/tooltips/10.jpg" alt="10"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html5 slider</a> by WOWSlider.com v8.8</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+<script type="text/javascript" src="slider/engine1/script.js"></script>
+
+
+<!-- End WOWSlider.com BODY section -->
+
+<div class="jumbotron jumbotron-container text-center">
+	<h1><i class="fa fa-gamepad"> HOLA TO GAMECON!!<i class="fa fa-gamepad"></i></i></h1>
+</div>
+
+<!-- card -->
+
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-lg-3 col-3" style="background-color: #213ACD">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+	</div>
+</div>
+	</div>	
+	</div>
+	<p class="mt-4 pt-4">copyright &copy; by The Stepping Stone</p>
+</div>
+</body>
+</html>

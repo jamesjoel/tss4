@@ -10,17 +10,17 @@ var safaw= express();
   	res.sendFile(__dirname + "/SafaW.html");
   });
   
-  safaw.get("/contact",function(req,res){
+  safaw.get("/SignUp",function(req,res){
   	console.log("This is Contact page");
-  	res.sendFile(__dirname +"/contact.html");
+  	res.sendFile(__dirname +"/SafaWsignup.html");
   });
 
-  safaw.get("/about",function(req,res){
+  safaw.get("/Login",function(req,res){
   	console.log("This is About page");
   	res.sendFile(__dirname + "/about.html")
   });
 
-  safaw.get("*",function(rq,rs){
-  	console.log("Not found");
-  	rs.sendFile(__dirname +"/not.html")
-  });
+  // safaw.get("*",function(rq,rs){
+  // 	console.log("Not found");
+  // 	rs.sendFile(__dirname +"/not.html")
+  // });

@@ -1,7 +1,6 @@
 {
-  "name": "nodejs",
+  "name": "index.js",
   "version": "1.0.0",
-  "description": "",
   "main": "day1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +9,12 @@
     "SafaW"
   ],
   "author": "anil",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "util": "^0.11.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }
