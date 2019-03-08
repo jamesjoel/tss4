@@ -34,7 +34,9 @@ app.get("/", function(req, res){
 
 });
 
-
+app.get("*", function(req, res){
+	res.render("not-found");
+});
 
 app.listen(3000, function(){
 	console.log("Server Running on PORT ");
