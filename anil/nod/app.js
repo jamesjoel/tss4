@@ -1,4 +1,5 @@
 var express=require("express");
+<<<<<<< HEAD
 
 var app=express();
 
@@ -29,4 +30,22 @@ app.get("/",function(req,res){
 
 app.listen(3000,function(){
 	console.log("server running at port 3000");
+=======
+var app=express();
+
+var bodyParser=require("body-parser");
+
+app.use(express.static(__dirname + "/public"));
+app.set("view engine", "ejs");
+app.use(bodyParser());
+
+
+app.get("/",function(req,res){
+	console.log("home page running");
+	res.render();
+})
+
+app.listen(3000,function(){
+	console.log("Server running");
+>>>>>>> 11e45c30a0175bdd4c9e5b0aa32974b72865ce72
 });
