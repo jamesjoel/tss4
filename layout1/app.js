@@ -12,11 +12,12 @@ app.use(express.static(__dirname+"/public/"));
 app.use(bodyParser());
 
 // app.use(bodyParser({ urlencoded : true}));
+
+
+
 // app.use(bodyParser.urlencoded({
 //   extended: true
 // }));
-
-
 
 
 

@@ -10,7 +10,7 @@ var app = express();
  });
 
 app.get("/S",function(req,res){
- 	console.log("Home");
+ 	console.log("Signup page is runnig");
  	res.sendFile(__dirname + "/SafaWsignup.html")
  });
 
