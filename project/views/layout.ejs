@@ -15,21 +15,13 @@
 			<small>FREE SHIPPING ON ALL U.S ORDERS OVER $50</small>
 		</div>
 		<div class="col-md-4 offset-md-4 header-text">
-			<ul class="nav float-right">
-				  <li class="nav-item dropdown" data-toggle="dropdown">
-				    <a class="nav-link dropdown-toggle" href="#">My Account</a>
-				    <div class="dropdown-menu">
-				    	<a href="/login" class="dropdown-item">Login</a>
-				    	<a href="/signup" class="dropdown-item">Signup</a>
-				    </div>
-				  </li>
-			</ul>		
+				
 		</div>
 	</div>
 </div>
 <nav class="sticky-top navbar header-text font-weight-bold header-color navbar-expand-sm">
 	<a href="#" class="navbar-brand header-text">
-		MyShop.com
+		<%= logo %>
 	</a>
 	<button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
 		<span class="navbar-toggler-icon">
@@ -48,14 +40,26 @@
 			<a class="nav-link" href="/contact">Contact</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="/help">Help</a>
+			<a class="nav-link" href="/login">Login</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/signup">Signup</a>
 		</li>
 	</ul>
 	<ul class="navbar-nav ml-auto">
 		
 		<li class="nav-item">
+			  <!-- <li class="nav-item dropdown" data-toggle="dropdown">
+			    <a class="nav-link dropdown-toggle" href="#">My Account</a>
+			    <div class="dropdown-menu">
+			    	<a href="/login" class="dropdown-item">Login</a>
+			    	<a href="/signup" class="dropdown-item">Signup</a>
+			    </div>
+			  </li> -->
 			<a class="nav-link">My Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i> <sup><span class="badge badge-pill badge-light">5</span></sup></a>
 		</li>
+		<ul class="nav float-right">
+		</ul>	
 	</ul>
 	</div>
 </nav>
