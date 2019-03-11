@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<h1  class="text-center">View Details</h1>
+	</div>
+	<table class="table table-bordered table-dark table-hover">
+		<tr>
+			<td>S.no.</td>
+			<td>Name</td>
+			<td>Age</td>
+			<td>City</td>
+		</tr>
+	<% result.forEach(function(x ,n){%>
+		<tr>
+			<td><%= n+1 %></td>
+			<td><%= x.name %></td>
+			<td><%= x.age %></td>
+			<td><%= x.city %></td>
+		</tr>
+	<% }) %>
+	</table>
+</body>
+</html>
