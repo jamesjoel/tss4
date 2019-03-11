@@ -15,6 +15,17 @@ app.get("/",function(req,res){
 			return;
 		}
 
-		var db= client.db("");
+		var db= client.db("anil");
+		db.collection("detail").find().toArray(function(err,result){
+			if(err)
+			{
+				console.log("data getting error",err);
+				return;
+			}
+			res.render("home",{result : result});
+		});
 	}); 	
+});
+app.listen(3000,function(){
+	console.log("Server running at 3000 port");
 });
