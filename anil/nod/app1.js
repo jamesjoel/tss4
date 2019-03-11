@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser());
 
 app.get("/",function(req,res){
-	var pagedata={ title : "home page", pagedata : "home"}
+	var pagedata={ title : "home page", pagedata :"home"}
 	res.render("layout",pagedata);
 });
 app.get("/about",function(req,res){

@@ -1,19 +1,17 @@
 {
   "name": "nod",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "main": "app1.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-<<<<<<< HEAD
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4"
-  }
-=======
-  "license": "ISC"
->>>>>>> 11e45c30a0175bdd4c9e5b0aa32974b72865ce72
+  "description": ""
 }
