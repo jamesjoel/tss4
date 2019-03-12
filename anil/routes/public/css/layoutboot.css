@@ -1,0 +1,40 @@
+#bodyjum
+{
+	/*border-radius: 10px;*/
+	background-image: radial-gradient(#FBFF0A,#fff,#FBFF0A,#fff);
+}
+#header
+{
+	background-image: radial-gradient(#FBFF0A,#fff,#FBFF0A,#fff);
+}
+#mymenu ul li
+{
+	background-color: #6C3F00;
+	list-style: none;
+	/*float:left/*/;*/
+	color: #fff;
+}
+nav
+{
+	background-color: #6C3F00;
+
+}
+.container ul li a
+{
+	color:#fff;
+}
+#mymenu ul li:hover
+{
+	background-color: #141100;
+}
+#jum1
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../image/36.jpg");
+}
+#jum2
+{
+	background-image:url("../image/2.jpg"); 
+	/*padding:50px 10px 10px 10px;*/
+}
