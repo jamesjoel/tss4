@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>MVC</h1>
+	<table class="table table-bordered">
+		<% result.forEach(function(x, n){ %>
+			<tr>
+				<td><%= n+1 %></td>
+				<td><%= x.name %></td>
+				<td><%= x.age %></td>
+				<td><%= x.city %></td>
+			</tr>
+	<% }) %>
+	</table>
+</div>
+</body>
+</html>
