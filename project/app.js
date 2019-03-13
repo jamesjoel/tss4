@@ -11,8 +11,7 @@ app.use(bodyParser());
 
 
 app.use(function(req, res, next){
-	res.locals.logo="My Shop";
-	console.log("++++++++++++hello++++++++++++");
+	res.locals.logo="The Stepping Stone";
 	next();
 });
 

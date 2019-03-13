@@ -8,21 +8,15 @@
 	<div class="row">
 		<div class="col-md-12">
 			<ul class="nav category-nav nav-pills justify-content-center">
-			  <li class="nav-item">
-			    <a class="nav-link first" href="#">Mobile</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">Home Appliance</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">Electronics</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" href="#">Fashion</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link last" href="#">Furniture</a>
-			  </li>
+
+			<% category.forEach(function(x){ %>
+				  <li class="nav-item">
+				    <a class="nav-link first" href="#"><%= x.name %></a>
+				  </li>
+
+			<% }) %>
+
+
 			  
 			</ul>
 		</div>
