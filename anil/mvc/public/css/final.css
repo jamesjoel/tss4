@@ -1,0 +1,118 @@
+#body{
+	background-color: ;
+}
+#h11{
+	color: #DA3738;
+}
+.h12{
+	color:#000;
+}
+#navbar-1
+{
+	background-color:#000000 !important ;
+	color: #fff !important;	
+}
+#navbar-1 ul li :hover
+{
+	background-color: #fff !important;
+	color: #000;
+	transition: 0.7s;
+}
+#myMenu ul li a{ 
+	color: #fff;
+ }
+#sp-1
+{
+	color: #fff;
+	font-size: 12px;
+}
+#p1{
+	color: #fff;	
+	font-size: 25px;
+}
+#sp-2{
+	color: #fff;
+}
+
+#p2{
+	color: #fff !important ;
+}
+#p3{
+	font-size: 30px;
+	color: #fff;
+}
+#cd:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd1:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd2:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-2:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-1{
+	min-height: 650px;
+	/*background-color: red;*/
+	/*background-image: url("../image/36.jpg");*/
+	background-image: url("../image/98-1.jpeg");
+}
+#jum-2{
+	height:260px;
+	background-image: url("../image/102-1.jpg");
+	background-image: 100% 100% auto;
+}
+#cd{
+	height: 260px;
+	background-image: url(../image/11-2.jpg);
+  }
+#cd1{
+	height: 260px;
+	background-image: url(../image/90-1.jpg);
+
+  }
+#cd2{
+	height: 260px;
+	background-image: url(../image/100-1.jpg);
+
+  }
+ .cd-1 a{
+	color: #fff;
+ 	text-decoration: none;
+ 	
+ }
+ .cd-1 a:hover{
+ 	text-decoration: none;
+ 	color: red;
+ }
+.pro-bt{
+	text-align: center;
+	visibility: hidden;
+	margin: 0 auto !important	;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.cd-1:hover .pro-bt{
+	visibility: visible;
+}
+#navbar-2{
+	background-color:#EBEBEB;
+	}
+#myMenu2 ul li:hover{
+	background-color: #504533;
+} 
+#myMenu2 ul li a:hover {
+	
+	color: #fff;
+}
