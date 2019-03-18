@@ -80,12 +80,12 @@ html {
 	text-transform: uppercase;
 }
 
-.category-nav .first{
+/*.category-nav li a:first-child{
 	border-radius: 3px 0 0 3px !important;
 }
-.category-nav .last{
+.category-nav li a:last-child{
 	border-radius: 0px 3px 3px 0px !important;
-}
+}*/
 .category-nav .nav-link:hover{
 	background-color: #452828;
 	color: #FFF;
