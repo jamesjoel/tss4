@@ -2,7 +2,7 @@ var express = require("express");
 var routes = express.Router();
 
 var category = require("../../models/category");
-
+var mongodb = require("mongodb");
 
 routes.get("/", function(req, res){
 
@@ -14,4 +14,15 @@ routes.get("/", function(req, res){
 
 });
 
+
+
+
+routes.get("/delete", function(req, res){
+	var id = req.query.id;
+	category.remove({ _id : mongodb.ObjectId(id)}, function(err, result){
+		res.redirect("/admin/viewcategory");
+	});
+
+
+});
 module.exports=routes;

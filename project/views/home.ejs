@@ -22,78 +22,30 @@
 		</div>
 	</div>
 	<div class="row product">
+
+		<% product.forEach(function(x){ 
+			var dis = (x.price * x.discount)/100;
+			dis = x.price - dis;
+		%>
+
+
 		<div class="col-md-3 mt-3">
 			<div class="card">
+				<span style="position: absolute; background-color: red; border-radius: 100px; color: #FFF; padding: 8px; margin-top: -10px; margin-left: -10px; font-size: 14px; font-weight: bold; transform: rotate(-30deg);"><%= x.discount %>%</span>
 			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
 			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
+			   	<h4 class="card-title"><%= x.name %></h4>
 			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
+			     <a href="#" class="btn my-btn-2 btn-sm float-left">More</a>
+			     <p class="text-right m-0"><%= dis  %></p>
+			     <small class="float-right m-0"><del>(<%= x.price %>)</del></small>
 			     <br />
 			   </div>
 			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
 			 </div>
 		</div>
-		<div class="col-md-3 mt-3">
-			<div class="card">
-			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
-			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
-			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
-			     <br />
-			   </div>
-			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
-			 </div>
-		</div>
-		<div class="col-md-3 mt-3">
-			<div class="card">
-			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
-			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
-			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
-			     <br />
-			   </div>
-			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
-			 </div>
-		</div>
-		<div class="col-md-3 mt-3">
-			<div class="card">
-			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
-			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
-			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
-			     <br />
-			   </div>
-			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
-			 </div>
-		</div>
-		<div class="col-md-3 mt-3">
-			<div class="card">
-			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
-			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
-			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
-			     <br />
-			   </div>
-			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
-			 </div>
-		</div>
-		<div class="col-md-3 mt-3">
-			<div class="card">
-			   <img class="card-img-top" src="image/product_1.png" alt="Card image" style="width:100%">
-			   <div class="card-body">
-			     <h4 class="card-title">Hoddie</h4>
-			     <p class="card-text">Some example text some example text. John Doe is an ...</p>
-			     <a href="#" class="btn my-btn-2 btn-sm">More</a>
-			     <br />
-			   </div>
-			     <a href="#" class="add-to-cart header-color ">Add To Cart</a>
-			 </div>
-		</div>
+		<% }) %>
+		
 		
 	</div>
 

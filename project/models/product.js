@@ -13,3 +13,9 @@ module.exports.insert=function(obj, cb){
 		db.collection("product").insert(obj, cb);
 	});
 }
+module.exports.remove=function(where, cb){
+	connect(function(err, client){
+		var db = client.db("tss4");
+		db.collection("product").remove(where, cb);
+	})
+}
