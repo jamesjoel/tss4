@@ -14,7 +14,7 @@ app.get("/",function (req, res) {
 	
 app.get("*",function (req, res) {
 	var pagedata={title: "",pagename: "nopage"};
-	res.render("layout
+	res.render("layout");
 
 });
 
