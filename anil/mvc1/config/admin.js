@@ -1,11 +1,8 @@
 var express = require ("express");
 var routes = express.Router();
 
+routes.use("/admin",require("../../controllers/admin/addproduct"));
+routes.use("/");
 
-
-routes.get("/admin" , function(req,res){
-	var pagedata = { title : Admin , pagename : "admin"};
-	res.render("layout" , pagedata);
-});
 
 module.exports=routes;
