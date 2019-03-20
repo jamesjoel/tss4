@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var session = require("express-session");
 var flash = require("express-flash");
 var cache = require("nocache");
+var upload = require("express-fileupload");
 
 
 
@@ -20,6 +21,7 @@ app.use(cookieParser());
 app.use(session({ secret : "james"}));
 app.use(flash());
 app.use(cache());
+app.use(upload());
 
 
 

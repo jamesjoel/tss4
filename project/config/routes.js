@@ -6,6 +6,7 @@ routes.use("/signup", require("../controllers/signup"));
 routes.use("/login", require("../controllers/login"));
 
 routes.use("/myaccount", backdoor, require("../controllers/myaccount"));
+routes.use("/profile", backdoor, require("../controllers/profile"));
 
 
 
