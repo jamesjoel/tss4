@@ -1,6 +1,6 @@
 var MongoClient = require("mongodb").MongoClient;
-var url = "mongodb://localhost : 27017" ;
+var url = "mongodb://localhost :27017" ;
 
-module.exports=function({
-	
-});
+module.exports=function(cb){
+	MongoClient.connect(url , cb)
+};
