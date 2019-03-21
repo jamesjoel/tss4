@@ -8,6 +8,8 @@ routes.use ("/shop", require("../controllers/shop"));
 
 routes.use("/signup",require("../controllers/sign"));
 
+routes.use("/login" , require("../controllers/login"));
+
 // routes.use("/Mega group", require("../controllers/megagroup"));
 
 // routes.use("/Features",require("../controllers/features"));
