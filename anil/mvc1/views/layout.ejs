@@ -28,7 +28,10 @@
 
  
   <nav id="navbar-1" class="navbar navbar-expand-sm sticky-top col-md-12">
-    <a href="#" class="navbar-brand"><h1 id="h11"><b>Zexome</b><span id="sp-1" class="badge badge-pill bg-info">As your desire</span></h1></a>  
+    <a href="#" class="navbar-brand"><h1 id="h11"><b>
+     Zexome
+      
+    </b><span id="sp-1" class="badge badge-pill bg-info">As your desire</span></h1></a>  
     <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu"><span id="sp-2" class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></button>
   <div id="myMenu" class="collapse navbar-collapse position-stable">
     <ul class="navbar-nav">
@@ -52,18 +55,25 @@
       </li> 
     </ul>
     <ul class="navbar-nav ml-auto">  
-      <li class="nav-item ml-auto"  >
-        <a href="#" class="nav-link mr-3">My Cart <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+
+      <% if(session.is_user_logged_in){ %>
+      <li class="nav-item ml-auto" >
+        <a href="#" class="nav-link mr-3"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> My Cart </a>
       </li>
       <li class="nav-item ml-auto">
-        <a href="#" class="nav-link mr-3"><i class="fa fa-id-card" aria-hidden="true"></i> My Account</a>
+        <a href="#" class="nav-link mr-3"><i class="fa fa-id-card" aria-hidden="true"></i> <%= full_name %> </a>
+      </li>
+    <% }else{ %>
+       <li class="nav-item ml-auto"  >
+        <a href="#" class="nav-link mr-3"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> My Cart </a>
       </li>
       <li class="nav-item ml-auto" >
-        <a class="nav-link" href="signup">SignUp</a>
+        <a class="nav-link" href="signup"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp </a>                                                        
       </li>
       <li class="nav-item ml-auto">
-        <a class="nav-link" href="login">Login</a>
+        <a class="nav-link" href="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login </a>
       </li>
+    <% } %>
     </ul>
   </div>  
 </nav>

@@ -10,7 +10,7 @@ routes.use("/signup",require("../controllers/sign"));
 
 routes.use("/login" , require("../controllers/login"));
 
-// routes.use("/Mega group", require("../controllers/megagroup"));
+routes.use("/myaccount", require("../controllers/myaccount"));
 
 // routes.use("/Features",require("../controllers/features"));
 

@@ -35,7 +35,7 @@ routes.post("/", function(req, res){
 			req.flash("msg", "This Username And Password is Incorrect");
 			res.redirect("/login");
 		}
-	});
+	})
 
 });
 
