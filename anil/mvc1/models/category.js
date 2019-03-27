@@ -21,3 +21,4 @@ module.exports.remove=function(where, cb){
 		db.collection("category").remove(where, cb);
 	});
 }
+

@@ -21,7 +21,8 @@ routes.use("/contact", require("../controllers/contact"));
 
 // routes.use("/Blog",require("../controllers/blog"));
 
-routes.use("/admin", require("./adminRoutes"));
+routes.use("/admin", require("./adminRoutes"));				//use admin routes
+
 
 routes.get("/logout",function(req, res){
 	req.session.destroy();
