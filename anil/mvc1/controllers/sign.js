@@ -13,7 +13,7 @@ routes.post("/", function(req , res){
 	
 	console.log("req.body");
 
-	// req.body.password = sha1(req.body.password);
+	req.body.password = sha1(req.body.password);
 
 	user.insert(req.body, function(err , result){
 		res.redirect("/login");

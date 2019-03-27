@@ -4,6 +4,8 @@ var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
 var session = require("express-session");
 var flash = require("express-flash");
+var cache = require("nocache");
+
 
 
 
@@ -15,9 +17,9 @@ app.use(express.static(__dirname +"/public/"));
 app.use(bodyParser());
 app.use(cookieParser());
 app.use(session({ secret : "anil"}));
+app.use(cache());
 app.use(flash());
 
-app.use(routes);
 
 app.use(function(req,res,next){
 	res.locals.logo = "Zexome";
@@ -25,6 +27,7 @@ app.use(function(req,res,next){
 	next();
 });
 
+app.use(routes);
 
 // app.listen(3000,function(){
 // 	console.log("Server Running");

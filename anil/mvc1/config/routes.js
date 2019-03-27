@@ -18,7 +18,22 @@ routes.use("/login" , require("../controllers/login"));
 
 routes.use("/contact", require("../controllers/contact"));
 
+
 // routes.use("/Blog",require("../controllers/blog"));
 
+routes.use("/admin", require("../controllers"));
+
+routes.get("/logout",function(req, res){
+	req.session.destroy();
+	res.redirect("/login");
+});
+ 
+ function backdoor(req, res, next)
+ {
+ 	if(! req.session.is_user_logged_in){
+		res.redirect("/login");
+		return;
+	}
+ }
 
 module.exports=routes;

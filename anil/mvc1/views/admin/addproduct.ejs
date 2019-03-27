@@ -7,8 +7,29 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 offset-md-4">
-				<form>
-					
+				<form action="/addproduct" method="post">
+					<li class="form-group">
+						<label>Name</label>
+						<input type="text" name="name" class="form-control">
+					</li>
+					<li class="form-group">
+						<label>Price</label>
+						<input type="text" name="price" class="form-control">
+					</li>
+					<li class="form-group">
+						<label>Detail</label>
+						<textarea class="form-control"></textarea>
+					</li>
+					<li class="form-group">
+						<label>Category</label>
+						<option class="form-control">
+							<select name="categoryn">Select</select>
+						</option>
+					</li>
+					<li class="form-group">
+						<label>Discount</label>
+						<input type="text" name="discount" class="form-control">
+					</li>
 				</form>
 			</div>
 			

@@ -5,4 +5,8 @@ routes.get("/", function(req,res){
 	var pagedata = { title : "Add Product", pagename : "addproduct"};
 	res.render("layout", pagedata);
 });
+
+routes.post("/", function(req, res){
+	
+});
 var routes=routes;
