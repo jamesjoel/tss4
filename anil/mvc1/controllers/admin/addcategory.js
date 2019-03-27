@@ -1,3 +1,13 @@
-var connect = require("../../config/connect");
+var express = require("express");
+var routes = express.Router();
 
-module.exports.insert
+
+routes.get("/", function(req, res){
+	var pagedata= { title : "Add Category", pagename : "addcategory"};
+	res.render("admin/layout", pagedata);
+});
+
+routes.post("/", function(req, res ){
+	console.log(req.body);
+	category.insert(req.body, function (err, result));
+});
