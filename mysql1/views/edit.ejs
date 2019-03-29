@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container mt-4">
+	
+	<div class="row">	
+		<div class="col-md-4 offset-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h3>Edit Employee</h3>
+				</div>
+			<div class="card-body">
+				<form action="/edit" method="post">
+				<input type="hidden" name="eid" value="<%= result.id %>" >
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" name="name" placeholder="Name" class="form-control" value="<%= result.name %>">
+			</div>
+			<div class="form-group">
+				<label>Salary</label>
+				<input type="text" name="salary" value="<%= result.salary %>" placeholder="Salary" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>City</label>
+				<select name="city" class="form-control">
+					<option>Select</option>
+					<option <% if(result.city=='Mumbai') {%> selected='selected' <% } %>>Mumbai</option>
+					<option <% if(result.city=='Pune') {%> selected='selected' <% } %>>Pune</option>
+					<option <% if(result.city=='Delhi') {%> selected='selected' <% } %>>Delhi</option>
+					<option <% if(result.city=='Indore') {%> selected='selected' <% } %>>Indore</option>
+					<option <% if(result.city=='Bhopal') {%> selected='selected' <% } %>>Bhopal</option>
+					<option <% if(result.city=='Ujjain') {%> selected='selected' <% } %>>Ujjain</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Gender</label>
+				<div class="form-check">
+					<input type="radio" <% if(result.gender=='male'){ %> checked='checked' <% } %> class="form-check-input" name="gender" value="male">Male
+				</div>
+				<div class="form-check">
+					<input type="radio" <% if(result.gender=='female'){ %> checked='checked' <% } %> class="form-check-input" name="gender" value="female">Female
+				</div>
+			</div>
+			</div>
+			<div class="card-footer">
+				<input type="submit" value="Update" class="btn btn-success">
+				<a href="/" class="btn btn-dark">Back</a>
+			</div>
+				</form>
+		</div>
+	</div>
+	
+	</div>
+
+
+				
+
+
+</body>

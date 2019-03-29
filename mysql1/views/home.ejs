@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container mt-4">
+	<h2 class="text-center">All Employee List</h2>
+	<button data-target="#addModal" data-toggle="modal" class="btn btn-sm btn-warning mb-2">Add New</button>
+
+	<table class="table table-hover table-borderd table-dark">
+		<tr class="bg-secondary text-light">
+			<th>S.No.</th>
+			<th>Name</th>
+			<th>Salary</th>
+			<th>Gender</th>
+			<th>City</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		<% result.forEach(function(x, n){ %>
+			<tr>
+				<td><%= n+1 %></td>
+				<td><%= x.name %></td>
+				<td><%= x.salary %></td>
+				<td><%= x.gender %></td>
+				<td><%= x.city %></td>
+				<td><a href="/edit?eid=<%= x.id %>" class="btn btn-info btn-sm">Edit</a></td>
+				<td><a href="/delete?eid=<%= x.id %>" class="btn btn-danger btn-sm">Delete</a></td>
+			</tr>
+		<% }) %>
+	</table>
+	</div>
+
+<div class="modal fade" id="addModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Add New Employee</h3>
+			</div>
+			<form action="/" method="post">
+				
+			
+			<div class="modal-body">
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" placeholder="Name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Salary</label>
+					<input type="text" name="salary" placeholder="Salary" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>City</label>
+					<select name="city" class="form-control">
+						<option>Select</option>
+						<option>Mumbai</option>
+						<option>Pune</option>
+						<option>Delhi</option>
+						<option>Indore</option>
+						<option>Bhopal</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Gender</label>
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="gender" value="male">Male
+					</div>
+					<div class="form-check">
+						<input type="radio" class="form-check-input" name="gender" value="female">Female
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-success" value="Add">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
