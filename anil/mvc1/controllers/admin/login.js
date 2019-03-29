@@ -14,7 +14,7 @@ routes.post("/" , function(req, res){
 	req.body.password = sha1(req.body.password);
 	var u = req.body.username;
 	var p = req.body.password;
-	admintable.find({ username : "u"}, function(err, result))
+	admintable.find({ username : "u"}, function(err, result){
 			// if(err){
 			// 	console.log("Finding error in login of admin");
 			// }
@@ -27,17 +27,17 @@ routes.post("/" , function(req, res){
 
 		}else{
 
-		res.flash("msg", "Password is Incorrect");
+		req.flash("msg", "Password is Incorrect");
 		res.redirect("/admin");
 		}
 
 	}else{
-		res.flash("msg", "Username and Password are Incorrect");
+		req.flash("msg", "Username and Password are Incorrect");
 		res.redirect("/admin");
 	}
 
 });
-
+})
 
 module.exports=routes;
 
