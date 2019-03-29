@@ -2,6 +2,7 @@ var express = require("express");
 var routes  = express.Router();
 var user = require("../models/user");
 var sha1 = require("sha1");
+var flash = require("flash");
 
 
 routes.get("/",function(req,res){
@@ -20,7 +21,7 @@ routes.post("/",function(req , res ){
 		{
 			if (result[0].password==sha1(p))
 			{
-				console.log("password is right");
+				// console.log("password is right");
 				req.session._id = result[0]._id;
 				req.session.fullname=result[0].fullname;
 				req.session.is_user_logged_in = true;
