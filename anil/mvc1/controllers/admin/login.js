@@ -9,7 +9,7 @@ routes.get("/", function(req, res){
 	res.render("admin/layout" , pagedata);
 });
 
-routes.post("/" , function(req, res){
+routes.post("/login" , function(req, res){
 	console.log(req.body);
 	req.body.password = sha1(req.body.password);
 	var u = req.body.username;
@@ -22,9 +22,9 @@ routes.post("/" , function(req, res){
 	if(result.lenght==1){
 		if(result[0].password==sha1(p)){
 			req.session._id = result[0]._id;
-			req.session.fullname = result[0].name;
+			req.session.fullname = result[0].username;
 			req.session.is_admin_logged_in =true;
-
+			res.redirect("/admin/addproduct");
 		}else{
 
 		req.flash("msg", "Password is Incorrect");
