@@ -22,3 +22,9 @@ module.exports.remove=function(where, cb){
 	});
 }
 
+module.exports.edit=function(where, obj, cb){
+	connect(function(err, client){
+		var db = client.db("anil");
+		db.collection("category").updateMany(where, {$set : obj}, cb);
+	});
+}
