@@ -19,3 +19,9 @@ module.exports.remove=function(where, cb){
 		db.collection("product").remove(where, cb);
 	})
 }
+module.exports.update=function(where, obj, cb){
+	connect(function(err, client){
+		var db = client.db("tss4");
+		db.collection("product").updateMany(where, { $set : obj} ,cb);
+	})	
+}

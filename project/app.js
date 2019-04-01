@@ -29,6 +29,19 @@ app.use(upload());
 app.use(function(req, res, next){
 	res.locals.logo="The Stepping Stone";
 	res.locals.session = req.session;
+	if(req.cookies.product_ids)
+	{
+		var str = req.cookies.product_ids;
+		var arr = str.split("#");
+		res.locals.total=arr.length;
+	}
+	else
+	{
+		res.locals.total=0;
+	}
+
+
+
 	next();
 });
 

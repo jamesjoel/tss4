@@ -9,6 +9,9 @@ routes.use("/myaccount", backdoor, require("../controllers/myaccount"));
 routes.use("/profile", backdoor, require("../controllers/profile"));
 
 
+routes.use("/cart", require("../controllers/cart"));
+
+
 
 routes.use("/admin", require("./adminRoute"));
 

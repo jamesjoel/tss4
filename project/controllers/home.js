@@ -7,6 +7,11 @@ var product = require("../models/product");
 
 
 routes.get("/", function(req, res){
+	// console.log(req.cookies.product_ids);
+
+
+
+
 	product.find({}, function(err, result1){
 		category.find({},function(err, result2){
 
