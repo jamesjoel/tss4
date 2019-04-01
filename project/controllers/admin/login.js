@@ -12,8 +12,9 @@ routes.post("/", function(req, res){
 	var u = req.body.username;
 	var p = req.body.password;
 	admin.select({ username : u}, function(err, result){
-		if(result.length==1)
+		if( result.length==1 )
 		{
+			console.log("lengthis 1")
 			if(result[0].password == sha1(p))
 			{
 				req.session.admin_id=result[0]._id;

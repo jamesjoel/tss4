@@ -11,7 +11,7 @@ routes.get("/", function(req, res){
 routes.post("/", function(req, res ){
 	console.log(req.body);
 	category.insert(req.body, function (err, result){
-		res.redirect("admin/addcategory");
+		res.redirect("/admin/addcategory");
 	});
 });
 
