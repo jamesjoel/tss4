@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var n=100;
+		function demo1()
+		{
+			document.getElementById("box").style.height=n+"px";
+			document.getElementById("box").style.width=n+"px";
+			n++;
+		}
+		function demo2()
+		{
+			document.getElementById("box").style.height="100px";
+			document.getElementById("box").style.width="100px";
+			n=100;
+		}
+		
+	</script>
+	<style type="text/css">
+		div{
+			height: 100px;
+			width: 100px;
+			background-color: #369852;
+		}
+	</style>
+</head>
+<body>
+	<div id="box" onmousemove="demo1()" onmouseout="demo2()"></div>
+</body>
+</html>
