@@ -1,10 +1,14 @@
 var express = require("express");
 var routes = express.Router();
 var product = require("../../models/product");
+var category = require("../../models/category");
 
 routes.get("/", function(req,res){
-	var pagedata = { title : "Add Product", pagename : "addproduct"};
-	res.render("layout", pagedata);
+	category.find({}, function(err, result){
+
+	var pagedata = { title : "Add Product", pagename : "addproduct", result : result};
+	res.render("admin/layout", pagedata);
+	});
 });
 
 routes.post("/", function(req, res){
@@ -15,4 +19,4 @@ routes.post("/", function(req, res){
 });
 
 
-var routes=routes;
+module.exports=routes;

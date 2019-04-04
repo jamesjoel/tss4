@@ -1,13 +1,12 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 offset-md-4">
-			<h3>Add Product</h3>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 offset-md-4">
-				<form action="/addproduct" method="post">
+			<div class="cart mt-4">
+				<div class="card-header">
+			 <h3>Add Product</h3>
+			 	</div>
+				<div class="card-body ">
+				<form action="/admin/addproduct" method="post">
 					<li class="form-group">
 						<label>Name</label>
 						<input type="text" name="name" class="form-control">
@@ -18,19 +17,24 @@
 					</li>
 					<li class="form-group">
 						<label>Detail</label>
-						<textarea class="form-control"></textarea>
+						<textarea class="form-control" name="detail"></textarea>
 					</li>
 					<li class="form-group">
 						<label>Category</label>
-						<option class="form-control">
-							<select name="categoryn">Select</select>
-						</option>
+					<select name="category" class="form-control">
+						<option >Select</option>
+							<% result.forEach(function(x){ %>
+								<option class="form-control" ><%= x.name %></option>
+							<% }) %>
+					</select>
 					</li>
 					<li class="form-group">
 						<label>Discount</label>
 						<input type="text" name="discount" class="form-control">
 					</li>
+					<button type="submit" class="btn btn-success mt-3 ml-1">Add</button>
 				</form>
+			</div>
 			</div>
 			
 		</div>
