@@ -15,7 +15,7 @@ routes.get("/", function(req, res){
 routes.get("/delete", function(req, res){
 	var id = req.query.cid;
 	var _id =  mongodb.ObjectId(id);
-	category.remove({ _id : id}, function(err, result){
+	category.remove({ _id : _id}, function(err, result){
 		res.redirect("/admin/viewcategory");
 	});
 });

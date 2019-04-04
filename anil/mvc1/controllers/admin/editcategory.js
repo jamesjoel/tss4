@@ -4,16 +4,16 @@ var mongodb = require("mongodb");
 var category = require("../../models/category");
 
 routes.get("/", function(req, res){
-	var pagedata = { title : "Edit Category", pagename : "edit"}
+	var pagedata = { title : "Edit Category", pagename : "editcategory"}
 	res.render("admin/layout", pagedata);
 });
 
 routes.post("/", function(req, res){
 	var id = req.query.eid;
 	var _id = mongodb.ObjectId(id);
-	category.edit({ _id : _id},req.body , function(err, result){
+	category.edit({ _id : _id}, req.body, function(err, result){
 		res.redirect("/admin/viewcategory");
-	});
+	})
 });
 
 module.exports=routes;
