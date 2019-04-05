@@ -25,8 +25,8 @@
 						<td><%= x.category %></td>
 						<td><%= x.discount %></td>
 						<td></td>
-						<td><a href="#" class="btn btn-info">Edit</a></td>
-						<td><a href="/admin/viewproduct/delete?pid=<%= x._id %>" class="btn btn-danger">Delete</a></td>
+						<td><a href="/admin/viewproduct/edit?id=<%= x._id %>" class="btn btn-info">Edit</a></td>
+						<td><a href="/admin/viewproduct/delete?id=<%= x._id %>" class="btn btn-danger">Delete</a></td>
 					</tr>
 			    <% }) %>
 			</table>

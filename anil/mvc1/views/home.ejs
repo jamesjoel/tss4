@@ -98,27 +98,53 @@
     <!-- <button class="btn pro-bt btn-danger text-center justify-content-center" >Day Offer</button> -->
     </div>
     <div class="col-md-8">
-      <div id="menslider" class="carousel slide" data-rider="carousel">
-      <ol>
-       <li data-target="#menslider" data-slide-to="0" class="active"></li> 
-       <li data-target="#menslider" data-slide-to="1"></li> 
-       <li data-target="#menslider" data-slide-to="2"></li> 
-      </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-<!--             <img src="image/101.jpg" style="height:260px;">
- -->          </div>
-           <div class="carousel-item">
-            <!-- <img src="image/101.jpg" style="height:260px;"> -->
-          </div>
-           <div class="carousel-item">
-            <!-- <img src="image/101.jpg" style="height:260px;"> -->
-          </div>
-        </div>
-        <a class="left carousel-control"  href="#menslider" data-slide="prev">
-          <span class="carousel-control-pre-icon"></span>
-        </a>
-        <a href="#menslider"></a>
+
+       <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 820px;
+    height: 260px;
+  }
+</style>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+
+      <div id="cd" class="col-md-3 m-3 jumbotron cd-1 flex-auto">
+      <a href="#"><h2 class="text-center font-weight-bold justify-content-center flex-auto">FOOT-WEAR</h2></a>
+    <button class="btn pro-bt btn-outline-danger text-center justify-content-center" >Click Here</button>
+    <button class="btn pro-bt btn-outline-danger text-center justify-content-center" >Day Offer</button>
+    </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <img src="/image/101.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="/image/102.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
       </div>
   </div>
 </div>
