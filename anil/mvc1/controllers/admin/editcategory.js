@@ -4,8 +4,11 @@ var mongodb = require("mongodb");
 var category = require("../../models/category");
 
 routes.get("/", function(req, res){
-	var pagedata = { title : "Edit Category", pagename : "editcategory"}
+	category.find({}, function(err, result){
+	var pagedata = { title : "Edit Category", pagename : "editcategory", result : result}
 	res.render("admin/layout", pagedata);
+		
+	});
 });
 
 routes.post("/", function(req, res){

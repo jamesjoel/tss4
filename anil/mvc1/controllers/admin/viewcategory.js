@@ -6,7 +6,7 @@ var mongodb = require("mongodb");
 
 routes.get("/", function(req, res){
 	category.find({}, function(err, result){
-	var pagedata = { title : "View Category", pagename : "viewcategory", category : result };
+	var pagedata = { title : "View Category", pagename : "viewcategory", result : result };
 	res.render("admin/layout",  pagedata);
 })
 });
