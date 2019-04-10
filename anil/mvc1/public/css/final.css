@@ -61,6 +61,11 @@
 	border-radius: 30px;
 	border: 2px solid #000;
 }
+#jum-3:hover{
+	transition: 0.9s;
+	border-radius: 30px;
+	border: 2px solid #000;
+}
 #jum-1{
 	min-height: 650px;
 	/*background-color: red;*/
@@ -68,9 +73,14 @@
 	background-image: url("../image/98-1.jpeg");
 }
 #jum-2{
-	height:260px;
+	height:300px;
 	background-image: url("../image/102-1.jpg");
 	background-image: 100% 100% auto;
+}
+#jum-3{
+	height:300px;
+	background-image: 100% 100% auto;
+	background-image: url("../image/60-1.jpg");
 }
 #cd{
 	height: 260px;
@@ -86,6 +96,11 @@
 	background-image: url(../image/100-1.jpg);
 
   }
+#cd3{
+	height: 260px;
+	background-image: url("../image/60-1.jpg");
+}
+
  .cd-1 a{
 	color: #fff;
  	text-decoration: none;
@@ -115,4 +130,20 @@
 #myMenu2 ul li a:hover {
 	
 	color: #fff;
+}
+
+.p:hover{
+	position: absolute;
+	background-color: #000;
+	border-radius: 90px;
+	color: #fff;
+	padding: 8px;
+	margin-top: -12px;
+	margin-left: -10px;
+	font-size: 14px;
+	font-weight: bold;
+	transform: rotate(-30deg);
+}
+.ph{
+	
 }

@@ -1,0 +1,41 @@
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<div class="card">
+				<div class="card-header">
+					<h3>Edit Product</h3>
+				</div>
+				<div class="card-body">
+					<form action="/admin/addproduct" method="post">
+					<li class="form-group">
+						<label>Name</label>
+						<input type="text" name="name" class="form-control">
+					</li>
+					<li class="form-group">
+						<label>Price</label>
+						<input type="text" name="price" class="form-control">
+					</li>
+					<li class="form-group">
+						<label>Detail</label>
+						<textarea class="form-control" name="detail"></textarea>
+					</li>
+					<li class="form-group">
+						<label>Category</label>
+					<select name="category" class="form-control">
+						<option >Select</option>
+							<% category.forEach(function(x){ %>
+								<option class="form-control" ><%= x.name %></option>
+							<% }) %>
+					</select>
+					</li>
+					<li class="form-group">
+						<label>Discount</label>
+						<input type="text" name="discount" class="form-control">
+					</li>
+					<button type="submit" class="btn btn-success mt-3 ml-1">Add</button>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
