@@ -7,6 +7,18 @@ module.exports.find=function(where, cb){
 	});
 }
 
+
+
+module.exports.findbysort=function(where, sorttype, cb){
+	connect(function(err, client){ 
+		var db = client.db("tss4");
+		db.collection("product").find(where).sort(sorttype).toArray(cb);
+	});
+}
+
+
+
+
 module.exports.insert=function(obj, cb){
 	connect(function(err, client){
 		var db = client.db("tss4");

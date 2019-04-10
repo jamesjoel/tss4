@@ -21,7 +21,13 @@
 			</ul>
 		</div>
 	</div>
+	<hr />
+	Sort : <a href="/?sorttype=lowtoheight" class="btn btn-info btn-sm">Low to Heigh</a>
+	<a href="/?sorttype=heighttolow" class="btn btn-info btn-sm">Heigh to Low</a>
+	<a href="/?sorttype=atoz" class="btn btn-info btn-sm">A to Z</a>
+	<a href="/?sorttype=ztoa" class="btn btn-info btn-sm">Z to A</a>
 	<div class="row product">
+
 
 		<% product.forEach(function(x){ 
 			var dis = (x.price * x.discount)/100;
