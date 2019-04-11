@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="js/jquery.js"> -->
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.js" ></script>
+	<script type="text/javascript" src="js/angular.js" ></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div class="jumbotron"> 
+	<h2>Hello {{ a }}</h2>
+	<input type="text" name="" ng-model="a" class="form-control">
+	<h5>{{b}}</h5>
+	<h4>{{ a.length}}</h4>
+
+</div>
+<div class="jumbotron">
+	<h4>{{ b }}</h4>
+	M<input type="radio" value="male" name="gender" ng-model="b" >
+	F<input type="radio" value="female" name="gender" ng-model="b">
+
+
+
+	<h1>Thank {{ a }}</h1>
+
+
+
+
+	
+</div>
+</body>
+</html>
