@@ -10,17 +10,46 @@
 	<script type="text/javascript" src="js/app.js"></script>
 
 </head>
-<body>
+<body ng-init="show()">
 <div class="jumbotron">
 	<h2>The Stepping Stone</h2>
-	<h4>{{ a }}</h4>
+	<h1 ng-bind="demo"></h1>
+	<h4 ng-bind="a"></h4>
 	<input type="text" class="form-control" ng-model="a">
 	<Br />
-	<h4>{{ a.length }}</h4>
-	<h4>{{ b }}</h4>
+	<!-- <h4>{{ a.length }}</h4> -->
+	<h4 ng-bind="a.length"></h4>
+	<h4 ng-bind="b"></h4>
 	M<input type="radio" name="gender" value="male" ng-model="b">
 	F<input type="radio" name="gender" value="female" ng-model="b">
+
+
+
+	<ol>
+		<li ng-repeat="x in arr">{{ x }}</li>
+	</ol>
+
+
 </div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3" ng-repeat="y in arr">
+			<div class="card">
+				<div class="card-header">
+					<b ng-bind="$index+1"></b>
+				</div>
+				<div class="card-body">
+					<h3 ng-bind="y.name"></h3>
+				</div>
+				<div class="card-footer">
+					<b ng-bind="y.price"></b>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<button class="btn btn-info" ng-click="show()">OK</button>
 
 </body>
 </html>
