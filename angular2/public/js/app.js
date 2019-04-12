@@ -2,6 +2,9 @@ var app = angular.module("myApp", []);
 
 app.controller("myCtrl", function($scope, $http){
 	$scope.newData={};
+	$scope.showSpinner=true;
+
+
 
 	// $scope.newData.name="";
 	// $scope.newData.age="";
@@ -20,12 +23,29 @@ app.controller("myCtrl", function($scope, $http){
 	}
 
 	$scope.add=function(){
+		$scope.showSpinner=false;
 		$http({
 			url : "/api/employee",
 			method : "post",
 			data : $scope.newData
 		}).then(function(res){
-			console.log(res.data);
+			$scope.allData.push(res.data.ops[0]);
+			$scope.showSpinner=true;
+			$("#addModal").modal("hide");
+		});
+	}
+	$scope.askDelete=function(x){
+		$scope.delObj = x;
+	}
+	$scope.delete=function(){
+		$http({
+			url : "/api/employee/delete",
+			method : "post",
+			data : $scope.delObj
+		}).then(function(res){
+			var n = $scope.allData.indexOf($scope.delObj);
+			$scope.allData.splice(n, 1);
+			$("#delModal").modal("hide");
 		});
 	}
 });
