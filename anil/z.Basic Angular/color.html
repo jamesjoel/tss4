@@ -5,26 +5,47 @@
 	<script type="text/javascript">
 		function demo(){
 			var a = Math.random();
-			var b = a*600;
+			var b = a*530;
 			var c = Math.floor(b);
+			console.log(c);
 
 			var x = Math.random();
-			var y = a*820;
+			var y = x*810;
 			var z = Math.floor(y);
+			console.log(z);
 
 
-			color = randomcolor();
-			bgcolor = randomcolor();
+			var color = randomcolor();
+			var bgcolor = randomcolor();
+
+			document.getElementById("body").style.backgroundColor="#"+bgcolor;
+			document.getElementById("circle").style.backgroundColor="#"+color;
+			document.getElementById("circle").style.marginTop=c + "px";
+			document.getElementById("circle").style.marginLeft=z + "px";
 		}
 
 		function randomcolor(){
+			i="";
 			for (var j=1;j<=6;j++){
-				var n = Math.floor(Math.randor()*15)
+				var n = Math.floor(Math.random()*15)
 				switch(n){
-					case 10 : 
+					case 10 : i+="A";
+								break;
+					case 11 : i+="B";
+								break;
+					case 12 : i+="C";
+								break;
+					case 13 : i+="D";
+								break;
+					case 14 : i+="E";
+								break;
+					case 15 : i+="F";
+								break;
+					default : i+=n;
 
 				}
 			}
+			return i;
 			
 		}
 	</script>
@@ -37,7 +58,7 @@
 		}
 	</style>
 </head>
-<body>
+<body id="body">
 <div id="circle" onmouseover="demo()"></div>
 </body>
 </html>
