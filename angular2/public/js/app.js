@@ -46,6 +46,7 @@ app.controller("myCtrl", function($scope, $http){
 			var n = $scope.allData.indexOf($scope.delObj);
 			$scope.allData.splice(n, 1);
 			$("#delModal").modal("hide");
+			console.log("delObj");
 		});
 	}
 });

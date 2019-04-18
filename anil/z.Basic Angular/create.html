@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<script type="text/javascript" src="bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		
+	function create(){
+	var a = document.createElement("button");
+	a.innerHTML="Customer Name"
+	document.getElementById("box").appendChild(a);
+	var b =	document.createElement("br")
+	document.getElementById("box").appendChild(b);
+	var c = document.createElement("textarea");
+	c.innerHTML="Here"
+	document.getElementById("box").appendChild(c);
+	var b =	document.createElement("br")
+	document.getElementById("box").appendChild(b);
+}
+	</script>
+</head>
+<body>
+
+<button onclick="create()" class="btn btn-success m-4">Create</button>
+<div id="box" class="m-4"></div>
+
+</body>
+</html>

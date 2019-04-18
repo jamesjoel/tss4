@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	var n=150;
+	
+	function demo1(){
+
+			document.getElementById("box").style.height=n + "px";
+			document.getElementById("box").style.width=n + "px";
+			document.getElementById("box").style.borderRadius=n + "px";
+			n++;
+	}
+	function demo2(){
+		n=150;
+		document.getElementById("box").style.height=n +"px";
+		document.getElementById("box").style.width=n +"px";
+		document.getElementById("box").style.borderRadius=n +"px";
+	}
+
+</script>
+<style type="text/css">
+	div
+	{
+		height: 150px;
+		width: 150px;
+		background-color: #ABC000;
+		border-radius: 80px;
+		margin : 0 auto;
+
+	}
+	#box1{
+		height: 150px;
+		width: 150px;
+		background-color: #000ABC;
+	}
+</style>
+</head>
+<body>
+	<div id="box1"  onmousemove="demo1()" onmouseout="demo2()" ></div>
+<div id="box"></div>
+</body>
+</html>

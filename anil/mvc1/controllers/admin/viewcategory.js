@@ -13,12 +13,15 @@ routes.get("/", function(req, res){
 
 
 routes.get("/delete", function(req, res){
-	var id = req.query.cid;
+	var id = req.query.id;
+	// console.log(req.query.id);
 	var _id =  mongodb.ObjectId(id);
 	category.remove({ _id : _id}, function(err, result){
 		res.redirect("/admin/viewcategory");
 	});
 });
+
+routes.use("/editcategory", require("./editcategory"));
 
 
 // routes.use("/edit", require("./edit"));

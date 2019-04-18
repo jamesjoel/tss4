@@ -11,10 +11,14 @@ routes.get("/", function(req, res){
 	});
 });
 
-routes.post("/", function(req, res){
-	var id = req.query.eid;
+routes.get("/", function(req, res){
+	var id = req.query.id;
+
+	console.log(id);
+	console.log(req.query);
 	var _id = mongodb.ObjectId(id);
-	category.edit({ _id : _id}, req.body, function(err, result){
+	category.edit({ _id : _id}, req.query, function(err, result){
+		console.log(result);
 		res.redirect("/admin/viewcategory");
 	})
 });
