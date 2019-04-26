@@ -5,13 +5,14 @@ var category = require("../../models/category");
 
 routes.get("/", function(req, res){
 	category.find({}, function(err, result){
+		console.log(result);
 	var pagedata = { title : "Edit Category", pagename : "editcategory", result : result}
 	res.render("admin/layout", pagedata);
 		
 	});
 });
 
-routes.get("/", function(req, res){
+routes.post("/", function(req, res){
 	var id = req.query.id;
 
 	console.log(id);
