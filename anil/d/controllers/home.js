@@ -3,9 +3,9 @@ var routes = express.Router();
 var d_user = require("../models/d_user");
 
 routes.get("/",  function(req, res){
-	// var pagedata = { title : "HOME", pagename : "home"}
-	// res.render("title", pagename);
-	res.render("layout");
+	var pagedata = { title : "HOME", pagename : "home"}
+	res.render("layout", pagedata);
+	// res.render("layout");
 });
 
 

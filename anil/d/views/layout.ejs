@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title></title>
+	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="css/SafaW.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -11,9 +11,8 @@
 <body>
 
 <div class="jumbotron" id="jum_body">
-	
-<nav class="sticky-top navbar navbar-info navbar-expand-sm navbar-expand-md  bg-dark">
-					<a href="#" class="navbar-brand text-centre"><h1 class="text-center"><b>Make_My_Software</b></h1><span class="badge badge-light badge-pill"><small id="sp-1">Unique Developer World</small></span></a>
+	<nav class="sticky-top navbar navbar-info navbar-expand-sm navbar-expand-md  bg-dark">
+					<a href="/" class="navbar-brand text-centre"><h1 class="text-center"><b>Make_My_Software</b></h1><span class="badge badge-light badge-pill"><small id="sp-1">Unique Developer World</small></span></a>
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#mybut">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -44,7 +43,7 @@
 								<a href="#" class="nav-link"><b>About</b></a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link"><b>Submit_Requirement</b></a>
+								<a href="/products" class="nav-link"><b>Our_Products</b></a>
 							</li>
 							
 						</ul>
@@ -128,16 +127,8 @@
 </form>	
 
 
+<%- pagename %>
 
-</div>
-</div>
- 
-<div class="jumbotron">
-
-	<div class="container">
-		<p>This software not support any CopyRight Claim </p>
-		<hr>
-	</div>
 
 
 </body>

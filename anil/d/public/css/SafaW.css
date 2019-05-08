@@ -11,5 +11,7 @@ body{
 	width: 100%;
 }
 #jum_footer{
-	
+	background-image: url("../image/115.png.PNG");
+	min-height: 600px;
+	width: 100%;
 }
