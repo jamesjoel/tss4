@@ -13,7 +13,7 @@ app.use(routes);
 
 io.on("connection", function(socket){
 	socket.on("message", function(data){
-		console.log(message);
+		console.log(data);
 
 		socket.broadcast.emit("show", data);
 	})
@@ -23,7 +23,7 @@ io.on("connection", function(socket){
 
 
 
-app.listen(3000, function(){
+server.listen(3000, function(){
 	console.log("Chat Live");
 });
 
