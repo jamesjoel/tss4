@@ -14,19 +14,17 @@
 			var message = document.getElementById("msg").value;
 
 			socket.emit("message", message);
+			var a=[];
+			a.push(message);
 
-			console.log(message);
-		}
+			console.log(a);
+				}
 	</script>
 </head>
 <body>
-
 <div class="jumbotron">
 	<input type="text" value="msg" id="msg" class="form-control">
-
 	<button class="btn btn-success" onclick="send()">Send</button>
 </div>
-
-
 </body>
 </html>

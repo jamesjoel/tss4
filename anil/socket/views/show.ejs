@@ -11,7 +11,10 @@
 		var socket = io();
 
 		socket.on("show", function(data){
-			document.getElementById("msg").innerHTML=data;
+			console.log(data);
+			var b=[];
+			b.push(data);
+			document.getElementById("msg").innerHTML=b;
 		})
 
 	</script>
@@ -20,7 +23,7 @@
 <body>
 
 	<div class="jumbotron">
-		<h5 id="msg" value="message"></h5>
+		<h5 id="msg"></h5>
 	</div>
 
 </body>

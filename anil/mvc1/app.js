@@ -9,8 +9,6 @@ var upload = require("express-fileupload");
 var random = require("randomstring");
 
 
-
-
 var routes = require("./config/routes");
 
 app.set("view engine", "ejs");

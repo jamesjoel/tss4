@@ -18,11 +18,6 @@ io.on("connection", function(socket){
 		socket.broadcast.emit("show", data);
 	})
 })
-
-
-
-
-
 server.listen(3000, function(){
 	console.log("Chat Live");
 });

@@ -3,12 +3,10 @@ var routes = express.Router();
 
 
 routes.use("/", require("../controllers/admin/login"));
-routes.use("/addcategory", backdoor, require("../controllers/admin/addcategory"))
-routes.use("/viewcategory", backdoor, require("../controllers/admin/viewcategory"));
-// routes.use("/viewcategory/editcategory", backdoor, require("../controllers/admin/editcategory"));
-routes.use("/addproduct", backdoor, require("../controllers/admin/addproduct"));
-routes.use("/viewproduct", backdoor, require("../controllers/admin/viewproduct"));
-routes.use("/users", backdoor, require("../controllers/admin/users"));
+routes.use("/viewcategory",  require("../controllers/admin/viewcategory"));
+routes.use("/addproduct",  require("../controllers/admin/addproduct"));
+routes.use("/viewproduct",  require("../controllers/admin/viewproduct"));
+routes.use("/users",  require("../controllers/admin/users"));
 
 routes.get("/logout", function(req, res){
 	req.session.destroy();

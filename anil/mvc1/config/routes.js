@@ -24,6 +24,8 @@ routes.use("/contact", require("../controllers/contact"));
 routes.use("/admin", require("./adminRoutes"));				//use admin routes
 
 // routes.use("*", require("../controllers/notfound"));
+routes.use("/api", require("./api"));
+
 
 routes.get("/logout",function(req, res){
 	req.session.destroy();

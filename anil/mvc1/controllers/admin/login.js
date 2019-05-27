@@ -24,7 +24,7 @@ routes.post("/" , function(req, res){
 			req.session.fullname = result[0].username;
 			req.session.is_admin_logged_in =true;
 	// console.log(req.session.fullname);
-			res.redirect("/admin/addcategory");
+			res.redirect("/admin/addproduct");
 		}else{
 
 		req.flash("msg", "Password is Incorrect");

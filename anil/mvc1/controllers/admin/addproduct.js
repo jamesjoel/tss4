@@ -13,20 +13,16 @@ routes.get("/", function(req,res){
 	res.render("admin/layout", pagedata);
 	});
 });
-
-
-
 routes.post("/", function(req, res){
 	console.log(req.body);
 	console.log(req.files);
-	var image = req.files.image;
-	var name = req.files.name;
-	var size = req.files.size;
+	var image = req.body.image;
+	var name = req.body.name;
+	var size = req.body.size;
 
 	var arr = name.split(".");
 	var n = arr.length;
 	var ext = arr[n-1];
-
 
 	if (ext == "jpg" || ext == "jpeg" || ext == "png" || ext == "gif" || ext == "bmp"){
 		if(size <= 1024*1024){
@@ -52,7 +48,4 @@ routes.post("/", function(req, res){
 		res.redirect("/admin/addproduct");
 	});
 });
-
-
-
 module.exports=routes;
