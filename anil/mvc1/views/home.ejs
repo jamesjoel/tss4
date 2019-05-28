@@ -1,5 +1,10 @@
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
+
+
+
+
 <div id="jum-1" class="jumbotron jumbotron-fade">
-<!-- <div class="container-fluid mt-4"> -->
   <div class="row">
     <div class="col-md-11 ">
      <div class="form-group">
@@ -216,35 +221,28 @@
 </div>
 </div>
 </div>
-
-<div class="container-fluid">
+<div  ng-app="product" ng-controller="Ctrl">
+<div ng-init="getPro()">
+<div class="container-fluid" ng-repeat="x in data">
 <div class="container"> 
   <div class="row">
-    <div class="card m-3">
+    <div class="col-md-3">
+      <div class="card m-3 pro float-left">
       <div class="card-header">
-        <h2>Sony</h2>
+        <div class="badge badge-pill" ng-bind="x.discount"></div>
+        <h2 ng-bind="x.name"></h2>
       </div>
       <div class="card-body">
-        
+        <img src="x.image">
       </div>
       <div class="card-footer">
-        
+        <p ng-bind="x.price"></p>
       </div>
     </div>
    
   </div>
+</div>
 </div>  
 </div>
-
-
-<div class="container-fluid">
-<div class="container">
-  <div class="row"> 
-    <div class=" card ">
-      <div class="card-header ph">
-        <img src="">
-      </div>  
-    </div>      
-  </div>
 </div>
 </div>

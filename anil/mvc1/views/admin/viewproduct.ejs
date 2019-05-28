@@ -1,7 +1,15 @@
 <script type="text/javascript" src="/js/product.js"></script>
+<script type="text/javascript">
+	function add(){
+		
+	}
+</script>
 <div class="container" ng-app="product" ng-controller="Ctrl">
+	<div class="m-4">
+		<button class="btn btn-outline-info form-control" ng-click="add()"><h4><b>Add  New Product</b></h4></button>
+	</div>
 	<div class="text-center">
-		<h3>All Product</h3>
+		<h4>All Product</h4>
 	</div>
 	<div class="row" ng-init="getPro()">
 		<div class="col-md-10 offset-md-1">
@@ -25,7 +33,7 @@
 						<td ng-bind="data.category"></td>
 						<td ng-bind="data.discount"></td>
 						<td ng-bind="data.image"></td>
-						<td><button class="btn btn-info">Edit</button></td>
+						<td><button class="btn btn-info" data-toggle="modal" data-target="#editModal" ng-click="askEdit(data)">Edit</button></td>
 						<td><button class="btn btn-danger" data-target="#delModal" data-toggle="modal" ng-click="askDel(data)">Delete</button></td>
 					</tr>
 			</table>
@@ -35,11 +43,24 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-body">
-					<p>Are you sure you want to delete:<b ng-bind="delObj.name"></b>, price:<b ng-bind="delObj.pricew"></b></p>
+					<p>Are you sure you want to delete: <b ng-bind="delObj.name"></b>, price: <b ng-bind="delObj.price"></b></p>
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-danger" ng-click="del()">Delete</button>
 					<button class="btn btn-outline-dark" data-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="editModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<input type="text" ng-model="editObj.name" class="form-control">
+					<input type="text" ng-model="editObj.price" class="form-control">
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success" ng-click="edit()">Save</button>
 				</div>
 			</div>
 		</div>

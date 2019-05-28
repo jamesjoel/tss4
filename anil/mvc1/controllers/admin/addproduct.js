@@ -5,6 +5,7 @@ var category = require("../../models/category");
 var upload = require("express-fileupload");
 var random = require("randomstring");
 var flash = require("flash");
+var path = require("path");
 
 routes.get("/", function(req,res){
 	category.find({}, function(err, result){
@@ -16,9 +17,10 @@ routes.get("/", function(req,res){
 routes.post("/", function(req, res){
 	console.log(req.body);
 	console.log(req.files);
-	var image = req.body.image;
-	var name = req.body.name;
-	var size = req.body.size;
+	var fileObj = req.files.image;
+	var name = fileObj.name;
+	var size = fileObj.size;
+
 
 	var arr = name.split(".");
 	var n = arr.length;
@@ -29,14 +31,11 @@ routes.post("/", function(req, res){
 			var rand_string = random.generate(21);
 
 			var newname = rand_string + "." + ext;
-			image.mv(__dirname + "/file/" + newname, function(err){
-				if(err){
-					console.log("...Error.. in uploading file")
-				}else{
-					console.log("File uploaded successfully...")
-				}
-				res.render("/admin/addproduct");
-			});
+			fileObj.mv(path.resolve()+ "/public/product/" + newname, function(err){
+				req.body.price=parseInt(req.body.price);
+				req.body.discount=parseInt(req.body.discount);
+				res.redirect("/admin/addproduct");
+			})
 		}else{
 			req.flash("msg", "File size is too long...")
 		}
