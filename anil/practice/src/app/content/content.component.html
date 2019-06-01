@@ -1,0 +1,25 @@
+<div class="con">
+        <!-- <input type="text" [( ngModel )]="sname"> -->
+        <div class="container">
+        
+        </div>
+        <div>
+          <table class="table table-dark table-hover">
+            <tr>
+            <th>S.NO.</th>
+            <th>City Name</th>
+            <th>Edit</th>
+            </tr>
+            <tr *ngFor="let x of cityname; let i = index ">
+              <td>{{ i }}</td>
+              <td>{{ x.city }}</td>
+              <td><button class="btn btn-info " (click)="edit(x, i)">Edit</button></td>
+            </tr>
+          </table>
+        </div>
+        <input type="text" [(ngModel)]="sname">
+        <button class="btn btn-info" (click)="data()">ok</button>
+        <h1>{{ sname }}</h1>
+
+        
+</div>
