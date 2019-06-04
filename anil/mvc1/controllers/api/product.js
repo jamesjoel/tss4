@@ -23,5 +23,7 @@ routes.post("/edit", function(req, res){
 		res.send(result);
 	})
 })
-
+routes.get("/add", function(req, res){
+	console.log(_id);
+})
 module.exports=routes;

@@ -223,23 +223,23 @@
 </div>
 <div  ng-app="product" ng-controller="Ctrl">
 <div ng-init="getPro()">
-<div class="container-fluid" ng-repeat="x in data">
+<div class="container-fluid">
 <div class="container"> 
   <div class="row">
-    <div class="col-md-3">
-      <div class="card m-3 pro float-left">
+    <div class="col-md-3 " ng-repeat="x in data">
+      <div class="card pro float-left" >
       <div class="card-header">
-        <div class="badge badge-pill" ng-bind="x.discount"></div>
-        <h2 ng-bind="x.name"></h2>
+        <div class="badge badge-pill-sm bg-primary justify-content-left" ng-bind="x.discount"></div>
+        <h4 ng-bind="x.name"></h4>
       </div>
       <div class="card-body">
-        <img src="x.image">
+        <img src="/public/product/x.image">
       </div>
       <div class="card-footer">
         <p ng-bind="x.price"></p>
+        <a href="/api/product/add?_id=ng-model="x._id" class="btn btn-success form-control">Add to Cart</a>
       </div>
     </div>
-   
   </div>
 </div>
 </div>  
