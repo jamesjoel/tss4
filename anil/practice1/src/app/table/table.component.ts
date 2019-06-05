@@ -1,9 +1,9 @@
 import { Component, OnInit, Input} from '@angular/core';
-// import { obj } from '../models/interface'
-interface obj{
-	name : string;
-	age : number;
-}
+import { arr } from '../models/interface'
+// interface arr{
+// 	name : string;
+// 	age : number;
+// }
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -11,10 +11,10 @@ interface obj{
 })
 export class TableComponent implements OnInit {
   
-	@Input() tableData:obj;
+	@Input() tableData = {} as arr;
 
   constructor() { 
-  	//console.log("------------",this.tableData);
+  	console.log("------------", this.tableData);
   }
 
   ngOnInit() {
@@ -22,7 +22,7 @@ export class TableComponent implements OnInit {
   }
   ngAfterOnInit(){
 
-    console.log("------------",this.tableData);
+    // console.log("------------",this.tableData);
   }
 
 }

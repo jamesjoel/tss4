@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-// import { obj } from './models/interface'
-interface obj{
-  name : string;
-  age : number;
-}
+import { arr } from './models/interface'
+// interface obj{
+//   name : string;
+//   age : number;
+// }
 
 @Component({
   selector: 'app-root',
@@ -13,9 +13,9 @@ interface obj{
 export class AppComponent {
   title = 'practice1';
 
-  comeObj : obj; 
+  comeObj = {} as arr;
 
-  come(a:obj){
+  come(a:arr){
 
   	console.log("The name is", a)
   	this.comeObj = a;

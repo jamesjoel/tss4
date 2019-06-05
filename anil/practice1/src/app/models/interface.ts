@@ -1,4 +1,4 @@
-export interface obj{
+export interface arr{
 	name : string;
 	age : number;
 }

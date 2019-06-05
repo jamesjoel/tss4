@@ -1,16 +1,17 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-// import { obj } from '../models/interface'
-interface obj{
-	name : string;
-	age : number;
-}
+import { arr } from '../models/interface'
+// interface obj{
+// 	name : string;
+// 	age : number;
+// }
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-	data = {} as obj;
+	data = {} as arr;
+	sending= {} as arr;
    
 	// data : {
 	// 	name : "anil",
@@ -21,8 +22,9 @@ export class ContentComponent implements OnInit {
 	@Output() goObj = new EventEmitter();
 
 	send(){
-		console.log("sending data", this.data);
-		this.goObj.emit(this.data);
+		this.sending=this.data;
+		console.log("sending data", this.sending);
+		this.goObj.emit(this.sending);
 	}
 
   constructor() { 
