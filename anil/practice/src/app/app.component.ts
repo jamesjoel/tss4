@@ -8,18 +8,46 @@ import { Router } from '@angular/router'
 })
 export class AppComponent {
 
-  home(){
-    this.routes.navigate([ 'home']);
+  stu = "Dr. Stephen Strange";
+
+  cities={
+    name : "London",
+    pop : 552425
   }
-  about(){
-    this.routes.navigate(['about']);
+
+  student = [{
+    name : "Johny",
+    age : 32,
+    gender : "male"
+  },
+  {
+    name : "Shahu",
+    age : 43,
+    gender : "female"
+  },
+  {
+    name : "Shivani",
+    age : 21,
+    gender : "Female"
+  },
+  {
+    name : "Sonu",
+    age : 43,
   }
-  contact(){
-    this.routes.navigate(['contact'])
-  }
-  not(){
-    this.routes.navigate(['not'])
-  }
+]
+
+  // home(){
+  //   this.routes.navigate([ 'home']);
+  // }
+  // about(){
+  //   this.routes.navigate(['about']);
+  // }
+  // contact(){
+  //   this.routes.navigate(['contact'])
+  // }
+  // not(){
+  //   this.routes.navigate(['not'])
+  // }
 
   constructor( private routes : Router){
 

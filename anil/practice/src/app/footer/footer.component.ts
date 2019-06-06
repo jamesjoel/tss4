@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router'
+import { variabl, obj, arr} from '../models/home';
+
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +10,10 @@ import { Router } from '@angular/router'
 })
 export class FooterComponent implements OnInit {
 
-  
+
+  @Input() student : variabl ;
+  @Input() cities : obj ;
+  @Input() stu : arr[];
 
   constructor( private routes : Router ) { 
     

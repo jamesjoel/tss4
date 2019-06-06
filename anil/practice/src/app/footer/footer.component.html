@@ -1,4 +1,21 @@
 <div class="jumbotron">
+    <h2>{{student}}</h2>
+    <ul>
+        <li>{{cities.name}}</li>
+        <li>{{cities.pop}}</li>
+    </ul>
+    <table class="table table-dark">
+        <tr>
+            <th>Student Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr *ngFor="let x of stu">
+            <td>{{x.name}}</td>
+            <td>{{x.age}}</td>
+            <td>{{x.gender}}</td>
+        </tr>
+    </table>
  <p class="ft"> English (UK)
 हिन्दी मराठी
 اردو ਪੰਜਾਬੀ বাংলা   ુજરાતી  தமிழ்   ెలుగు  മലയാളം    ಕನ್ನಡ  Sign  UpLog In Messenger  

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+// import { variabl} from '../models/home'
 
 @Component({
   selector: 'app-about',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent implements OnInit {
 
+  // @Input() name : variabl ;
   constructor(private Routes : Router) { }
 
   ngOnInit() {
