@@ -11,6 +11,8 @@ import { arr } from './models/interface'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
+
   title = 'practice1';
 
   comeObj = {} as arr;

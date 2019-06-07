@@ -2,9 +2,12 @@
 	<tr>
 	<th>Name</th>
 	<th>Age</th>
+	<th>City</th>
 </tr>
-<tr>
-	<td>{{ tableData.name }}</td>
-	<td>{{ tableData.age }}</td>
+<tr *ngFor="let data of datago ; let i = index">
+	<td>{{ i+1 }}</td>
+	<td>{{ data.name }}</td>
+	<td>{{ data.age }}</td>
+	<td>{{ data.city }}</td>
 </tr>
 </table>

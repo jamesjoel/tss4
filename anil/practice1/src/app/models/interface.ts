@@ -1,4 +1,5 @@
 export interface arr{
-	name : string;
-	age : number;
+	name : string|any;
+	age : number|any;
+	city : string|any;
 }

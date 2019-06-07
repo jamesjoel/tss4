@@ -1,5 +1,7 @@
 import { Component, OnInit, Input} from '@angular/core';
-import { arr } from '../models/interface'
+import { arr } from '../models/interface';
+import { GetDataService } from '../services/get-data.service';
+
 // interface arr{
 // 	name : string;
 // 	age : number;
@@ -13,7 +15,12 @@ export class TableComponent implements OnInit {
   
 	@Input() tableData = {} as arr;
 
-  constructor() { 
+  datago : arr[];
+
+
+
+
+  constructor( private dulClass : GetDataService) { 
     tableData : {};
   	console.log("------------", this.tableData);
   }
@@ -21,11 +28,14 @@ export class TableComponent implements OnInit {
 
 
   ngOnInit() {
+    // console.log("------------+++++++++++++++=",this.dulClass.getData());
+    this.datago=this.dulClass.getData();
+
 
   }
-  ngAfterOnInit(){
+  // ngAfterOnInit(){
 
-    // console.log("------------",this.tableData);
-  }
+  //   // console.log("------------",this.tableData);
+  // }
 
 }
