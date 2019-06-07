@@ -28,7 +28,8 @@ export class ContentComponent implements OnInit {
 	}
 
   constructor() { 
-
+   data : {}; 
+   sending : {};
   }
 
   ngOnInit() {

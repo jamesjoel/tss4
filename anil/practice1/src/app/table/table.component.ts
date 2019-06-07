@@ -14,8 +14,11 @@ export class TableComponent implements OnInit {
 	@Input() tableData = {} as arr;
 
   constructor() { 
+    tableData : {};
   	console.log("------------", this.tableData);
   }
+
+
 
   ngOnInit() {
 
