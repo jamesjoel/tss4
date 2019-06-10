@@ -9,5 +9,5 @@ import { staticViewQueryIds } from '@angular/compiler';
 })
 export class AppComponent {
 
-  constructor(private fb : FormBuilder){}
+  constructor(){}
 }

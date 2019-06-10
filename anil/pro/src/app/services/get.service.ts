@@ -1,16 +1,21 @@
 import { Injectable } from '@angular/core';
-import {obj} from '../models'
+import { HttpClient }  from '@angular/common/http';
+import { obj } from '../models'
 
-import {HttpClient} from '@angular/common/http'
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetService {
+	data : obj[];
 
-  data : obj[];
+  constructor( private http : HttpClient) { }
+
   getData(){
-    this.data = this.http.get("http://localhost:3000")
+  	this.http.get("http://localhost:3000").subscribe((info : any)=>{
+  		return info ;
+  	});
   }
-  constructor(private http : HttpClient) { }
+
 }
