@@ -11,7 +11,6 @@ import { arr } from '../models/interface'
 })
 export class ContentComponent implements OnInit {
 	data = {} as arr;
-	sending= {} as arr;
    
 	// data : {
 	// 	name : "anil",
@@ -22,9 +21,8 @@ export class ContentComponent implements OnInit {
 	@Output() goObj = new EventEmitter();
 
 	send(){
-		this.sending=this.data;
-		console.log("sending data", this.sending);
-		this.goObj.emit(this.sending);
+		console.log("sending data", this.data);
+		this.goObj.emit(this.data);
 	}
 
   constructor() { 

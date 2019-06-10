@@ -10,7 +10,7 @@ export class GetDataService {
 	data : arr[];
 
 	getData(){
-		let data = this.http.get("http://localhost:3000");
+		// let data = this.http.get("http://localhost:3000");
 		return data;
 	}
 

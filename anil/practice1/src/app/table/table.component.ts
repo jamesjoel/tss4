@@ -15,13 +15,10 @@ export class TableComponent implements OnInit {
   
 	@Input() tableData = {} as arr;
 
-  datago : arr[];
-
-
-
+arr : arr[];
 
   constructor( private dulClass : GetDataService) { 
-    tableData : {};
+    // tableData : {};
   	console.log("------------", this.tableData);
   }
 
@@ -29,7 +26,7 @@ export class TableComponent implements OnInit {
 
   ngOnInit() {
     // console.log("------------+++++++++++++++=",this.dulClass.getData());
-    this.datago=this.dulClass.getData();
+    // this.datago=this.dulClass.getData()
 
 
   }
