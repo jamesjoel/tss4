@@ -13,9 +13,12 @@ export class GetService {
   constructor( private http : HttpClient) { }
 
   getData(){
-  	this.http.get("http://localhost:3000").subscribe((info : any)=>{
-  		return info ;
-  	});
+  	return this.http.get("http://localhost:3000");
+  }
+  postData(data : obj){
+    let url = "http://localhost:3000";
+    // console.log(event);
+    return this.http.post(url, data);
   }
 
 }

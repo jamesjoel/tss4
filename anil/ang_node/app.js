@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+var MongoClient = require("mongodb").MongoClient;
+var url = "mongodb://localhost:27017";
 
 
 app.use(function(req, res, next) {
@@ -8,6 +10,23 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get("/", function(req, res){
+  MongoClient.connect(url, function(err, client){
+    client.db("anil").collection("user").find().toArray(function(err, result){
+      console.log(result);
+      res.send(result);
+    });
+  })
+})
+
+app.post("/", function(req, res){
+  MongoClient.connect(url, function(err, client){
+    client.db("anil").collection("user").insert(req.body, function(err, result){
+      console.log(result);
+      res.send(result);
+    });
+  })
+})
 
 app.listen(3000, function(){
 	console.log("Running");
