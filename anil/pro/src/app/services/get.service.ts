@@ -8,14 +8,24 @@ import { obj } from '../models'
   providedIn: 'root'
 })
 export class GetService {
-	data : obj[];
+	// data : obj[];
+	// data = [{
+	// 	name : "anil",
+	// 	age : 20,
+	// 	city : "mumbai"
+	// },
+	// {
+	// 	name : "anil",
+	// 	age : 20,
+	// 	city : "mumbai"
+	// }];
 
   constructor( private http : HttpClient) { }
 
   getData(){
-  	this.http.get("http://localhost:3000").subscribe((info : any)=>{
-  		return info ;
-  	});
+  	return this.http.get("http://localhost:3000");
+  	// return this.data;
+  
   }
 
 }

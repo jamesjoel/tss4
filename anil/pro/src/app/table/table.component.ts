@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { getService }
+import { GetService } from '../services/get.service';
+import { obj } from '../models'
+
 
 
 @Component({
@@ -8,10 +10,16 @@ import { getService }
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+	data : obj[];
 
-  constructor(private ) { }
 
+  constructor(private dulClass:GetService) { }
   ngOnInit() {
+  	this.dulClass.getData().subscribe((info : obj[])=>{
+  		this.data=info;
+  	})
+
+  	// this.data = this.dulClass.getData();
   }
 
 }
