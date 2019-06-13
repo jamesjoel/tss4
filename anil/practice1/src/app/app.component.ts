@@ -15,13 +15,14 @@ export class AppComponent {
 
   title = 'practice1';
 
-  comeObj = {} as arr;
+  // comeObj = {} as arr;
+  comeObj:arr;
 
   come(a:arr){
 
-  	console.log("The name is", a)
   	this.comeObj = a;
-  	return 0;
+  	console.log("The name is", this.comeObj);
+  	// return 0;
   }
   
 }

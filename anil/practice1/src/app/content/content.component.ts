@@ -10,27 +10,31 @@ import { arr } from '../models/interface'
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-	data = {} as arr;
+	data:arr = {
+		name : "",
+		age : null
+		};
    
-	// data : {
-	// 	name : "anil",
-	// 	age : 21
-	// }
+	
 
 	// name = "Dr. Stephen Strange"; 
 	@Output() goObj = new EventEmitter();
 
-	send(){
-		console.log("sending data", this.data);
-		this.goObj.emit(this.data);
-	}
+	
 
   constructor() { 
-   data : {}; 
-   sending : {};
+  
   }
 
   ngOnInit() {
   }
+
+  send(){
+		
+		this.goObj.emit(this.data);
+		this.data.name="";
+		this.data.age=null;
+		console.log("++++++++++=", this.data);
+	}
  
 }

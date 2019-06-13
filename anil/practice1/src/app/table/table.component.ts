@@ -13,9 +13,9 @@ import { GetDataService } from '../services/get-data.service';
 })
 export class TableComponent implements OnInit {
   
-	@Input() tableData = {} as arr;
+	@Input() tableData: arr;
 
-arr : arr[];
+
 
   constructor( private dulClass : GetDataService) { 
     // tableData : {};

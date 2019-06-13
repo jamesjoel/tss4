@@ -9,10 +9,11 @@ export class GetDataService {
 
 	data : arr[];
 
-	getData(){
-		// let data = this.http.get("http://localhost:3000");
-		return data;
-	}
+	// getData(){
+	// 	// let data = this.http.get("http://localhost:3000");
+		
+	// 	return data;
+	// }
 
 
   constructor(private http : HttpClient) { }
