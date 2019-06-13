@@ -1,5 +1,5 @@
 export interface obj{
-	name : string;
-	age : number;
+	fullname : string;
+	contact : number;
 	city : string;
 }

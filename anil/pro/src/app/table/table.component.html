@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="jumbotron">
 	<table class="table table-dark table-hover">
 		<tr>
@@ -13,4 +14,49 @@
 			<td>{{x.city}}</td>
 		</tr>
 	</table>
+=======
+<button class="btn btn-info" data-toggle="modal" data-target="#add" >Add User</button>
+<div class ="jumbotron">
+  <table class="table table-hover table-dark">
+    <tr>
+      <th>S.No.</th>
+      <th>User name</th>
+      <th>City</th>
+      <th>Contact</th>
+    </tr>
+    <tr *ngFor="let x of info, let i = index">
+      <td>{{ i+1}}</td>
+      <td>{{x.fullname}}</td>
+      <td>{{x.city}}</td>
+      <td>{{x.contact}}</td>
+    </tr>
+  </table>
+</div>
+<div id="add" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Add Student</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+        <label>Name</label>
+        <input type="text" [(ngModel)]="data.fullname" class="form-control">
+      </div>
+      <div class="form-group">
+          <label>City</label>
+          <input type="text" [(ngModel)]="data.city" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="text" [(ngModel)]="data.contact" class="form-control">
+          </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-success" (click)="add()">Save</button>
+      <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+
+    </div>
+  </div>
+>>>>>>> 23119738f59e1ab9da47c4fb219a470f4232f436
 </div>
