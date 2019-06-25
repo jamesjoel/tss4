@@ -21,7 +21,6 @@ routes.post("/", function(req, res){
 	var name = fileObj.name;
 	var size = fileObj.size;
 
-
 	var arr = name.split(".");
 	var n = arr.length;
 	var ext = arr[n-1];
